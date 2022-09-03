@@ -9,9 +9,9 @@
 <body>
     <h1>Profile</h1>
     <img src="../../images/2.jfif" alt="photo" height="50">
-    <form action="">
+    <form id="profile">
         <input id="file" type="file">
-        <button type="delete">D</button>
+        <button type="reset">D</button>
         <br>
         <label for="name">Name</label>
         <input id="name" type="text">
@@ -19,13 +19,13 @@
         <input id="email" type="email">
         <br>
         <label for="country">Country:</label>
-        <select name="country" id="country" form="login" size="1">
+        <select name="country" id="country" size="1" form="profile">
             <option value="c1">Ukraine</option>
             <option value="c2">USA</option>
             <option value="c3">Spain</option>
         </select>
         <label for="city">City:</label>
-        <input type="text" placeholder="Enter your city">
+        <input id="city" type="text" placeholder="Enter your city">
         <br>
         <label for="zip">Zip-code</label>
         <input id="zip" type="text">
