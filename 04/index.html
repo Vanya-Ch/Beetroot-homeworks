@@ -7,7 +7,7 @@
     <title>Work with forms</title>
 </head>
 <body>
-    <form id="login" action="./profile/" autocomplete="off">
+    <form id="login" action="https://vanya-ch.github.io/Homeworks/04/profile/" autocomplete="off">
         <h1>Create an account</h1>
         <label> First name:
         <input type="text" placeholder="Enter your first name">
@@ -44,6 +44,35 @@
     <div>
         Have an account? <a href="#">Log in</a>
     </div>
+    <br>
+    <hr>
+    <h2>Profile</h2>
+    <img src="../../images/2.jfif" alt="photo" height="50">
+    <form id="profile">
+        <input id="file" type="file">
+        <button type="reset">Clear</button>
+        <br>
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <label for="email">E-mail</label>
+        <input id="email" type="email">
+        <br>
+        <label for="country">Country:</label>
+        <select name="country" id="country" size="1" form="profile">
+            <option value="c1">Ukraine</option>
+            <option value="c2">USA</option>
+            <option value="c3">Spain</option>
+        </select>
+        <label for="city">City:</label>
+        <input id="city" type="text" placeholder="Enter your city">
+        <br>
+        <label for="zip">Zip-code</label>
+        <input id="zip" type="text">
+        <label for="tel">Phone number:</label>
+        <input id="tel" type="tel">
+        <br>
+        <button type="submit">Update</button>
+    </form>
     
 </body>
 </html>
