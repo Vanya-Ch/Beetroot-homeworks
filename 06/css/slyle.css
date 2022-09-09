@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+header{
+    border-bottom: 1px solid #828282;
+    max-width: 970px;
+    margin: 28px auto 0px auto;
+    
+}
+
+nav{
+    
+    padding-bottom: 28px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Open Sans';
+    max-width: 300px;
+    font-size: 48px;
+    padding-bottom: 50px;
+}
+
+#Novik{
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    text-align: center;
+    max-width: 970px;
+    margin: 0 auto;
+    
+}
+
+span{
+    padding-right: 40px;
+    font-size: 18px;
+    padding: 0 auto;
+    
+}
+main{
+    margin-top: 12px;
+}
+
+#about{
+    background-color: #E5E5E5;
+    margin: 0 auto ;
+    
+    
+}
+
+#about-me{
+    max-width: 200px;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 auto;
+    
+
+}
+
+.about{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.first{
+    max-width: 480px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.second{
+    max-width: 406px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.third{
+    max-width: 321px;
+    margin: 0 auto;
+}
+
+#perks{
+    max-width: 120px;
+    padding-top: 100px;
+    margin: 0 auto;
+    font-size: 34px;
+}
+
+.work-with{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#portfolio{
+    background-color: #E5E5E5
+}
+
+.programs{
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#projects{
+    max-width: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    font-size: 34px;
+}
+
+.caption{
+    padding-top: 40px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+
+.braun{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+#contact{
+    max-width: 150px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    font-size: 34px;
+}
+
+.more{
+    max-width: 280px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.button{
+    border-radius: 22px;
+    font-size: 18px;
+    max-width: 180px;
+    text-align: center;
+    background-color: #070707;
+    color: #ffffff;
+}
+
+#button{
+    padding: 10px 16px;
+}
+
+.block-link{
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.links{
+    padding-right: 50px;
+}
+
+.like{
+    max-width: 200px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    color: #828282;
+}
+
+.font{
+    font-size: 14px;
+}
+
+.gray{
+    color: #828282;
+}
+
+.black{
+    color: #070707;
+}
+
+.skills{
+    padding-top: 25px;
+    padding-bottom: 60px;
+    font-size: 14px;
+    color: #828282;
+}
+
+.sk{
+    font-size: 14px;
+    color: #828282;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.block{
+    
+}
