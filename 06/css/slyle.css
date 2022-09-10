@@ -208,5 +208,11 @@ main{
 }
 
 .block{
-    
+    display: inline-block;
+    padding-right: 97px;
+}
+
+.blocks{
+    display: inline-block;
+
 }
