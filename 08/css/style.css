@@ -10,6 +10,8 @@ html{
 
 body{
     font-size: 18px;
+    color:#2F281E;
+    ;
 }
 
 header{
@@ -37,7 +39,7 @@ li{
     padding: 26px 20px 26px 0;
 }
 
-ul:nth-last-child(){
+li:nth-last-child(){
     padding-right: 0;
 }
 
@@ -48,6 +50,8 @@ ul:nth-last-child(){
 
 .head{
     display: -webkit-inline-box;
+    vertical-align: middle;
+    height: 100%;
 }
 
 .head-logo{
@@ -77,8 +81,6 @@ ul:nth-last-child(){
 
 .container-first-screen{
     max-width: 500px;
-    padding: 123px 56px 123px 0;
-    vertical-align: top;
 }
 
 .section{
@@ -87,6 +89,8 @@ ul:nth-last-child(){
 
 .picture{
     display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
 h1{
