@@ -31,7 +31,7 @@ ol{
     list-style: none;
     padding-left: 200px;
     padding-right: 200px;
-    vertical-align: middle;
+    
 }
 
 li{
@@ -49,17 +49,18 @@ li:nth-child(4){
 }
 
 .head{
-    display: -webkit-inline-box;
-    vertical-align: middle;
+    display: inline-block;
     padding: 13px 0;
 }
 
 .logo{
     vertical-align: middle;
+    display: inline-block;
 }
 
-.navigation ul{
+.navigation{
     vertical-align: middle;
+    display: inline-block;
 }
 
 .button{
@@ -96,7 +97,8 @@ li:nth-child(4){
     padding-bottom: 75px;
     background-image: url(../../images/sec-2-bg.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position:center bottom;
+    background-size: 100%;
 }
 
 .picture{
