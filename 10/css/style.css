@@ -104,7 +104,7 @@ div.blur:hover{
     padding: 20px;
     border-radius: 8px;
     border: none;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .like{
