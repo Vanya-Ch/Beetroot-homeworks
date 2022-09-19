@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    margin: 120px auto 80px auto;
+    text-align: center;  
+    color:#000
+}
+
+.block-1{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px);
+    gap: 20px;
+    grid-template-areas: 
+    "foto-1 foto-2 foto-2"
+    "foto-3 foto-3 foto-4"
+    "foto-5 foto-6 foto-6";
+}
+
+.foto{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.foto-1{
+    background-image: url(../../images/image-1.png);
+    grid-area: foto-1;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-2{
+    background-image: url(../../images/image-2.png);
+    grid-area: foto-2;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-3{
+    background-image: url(../../images/image-3.png);
+    grid-area: foto-3;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-4{
+    background-image: url(../../images/image-4.png);
+    grid-area: foto-4;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-5{
+    background-image: url(../../images/image-5.png);
+    grid-area: foto-5;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-6{
+    background-image: url(../../images/image-6.png);
+    grid-area: foto-6;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.blur{
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    height: 100%;
+    border-radius: 20px;
+}
+
+div.blur:hover{
+    visibility: visible;
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+    border-radius: 20px;
+}
+
+.button{
+    max-width: 40px;
+    max-height: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    visibility: hidden;
+}
+
+.like{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #E0E0E0;
+    background-image: url(../../images/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    
+}
+
+.download{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #E0E0E0;
+    background-image: url(../../images/Vector2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    
+}
+
+.left{
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.right{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #E0E0E0;
+}
+
+.block-2{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px);
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 370px);
+
+    grid-template-areas: 
+    "foto-7 foto-8 foto-8" 
+    "foto-9 foto-9 foto-10" 
+    "foto-9 foto-9 foto-10" 
+    "foto-11 foto-11 foto-12";
+}
+
+.foto-7{
+    background-image: url(../../images/image-7.png);
+    grid-area: foto-7;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-8{
+    background-image: url(../../images/image-8.png);
+    grid-area: foto-8;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-9{
+    background-image: url(../../images/image-9.png);
+    grid-area: foto-9;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-10{
+    background-image: url(../../images/image-10.png);
+    grid-area: foto-10;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-11{
+    background-image: url(../../images/image-11.png);
+    grid-area: foto-11;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-12{
+    background-image: url(../../images/image-12.png);
+    grid-area: foto-12;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-3{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px);
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 370px);
+
+    grid-template-areas: 
+    "foto-13 foto-14 foto-15"
+    "foto-16 foto-14 foto-17"
+    "foto-18 foto-19 foto-17"
+    "foto-18 foto-20 foto-20"
+    "foto-21 foto-21 foto-22";
+
+    margin-bottom: 120px;
+}
+
+.foto-13{
+    background-image: url(../../images/image-13.png);
+    grid-area: foto-13;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-14{
+    background-image: url(../../images/image-14.png);
+    grid-area: foto-14;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-15{
+    background-image: url(../../images/image-15.png);
+    grid-area: foto-15;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-16{
+    background-image: url(../../images/image-16.png);
+    grid-area: foto-16;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-17{
+    background-image: url(../../images/image-17.png);
+    grid-area: foto-17;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-18{
+    background-image: url(../../images/image-18.png);
+    grid-area: foto-18;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-19{
+    background-image: url(../../images/image-19.png);
+    grid-area: foto-19;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-20{
+    background-image: url(../../images/image-20.png);
+    grid-area: foto-20;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-21{
+    background-image: url(../../images/image-21.png);
+    grid-area: foto-21;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-22{
+    background-image: url(../../images/image-22.png);
+    grid-area: foto-22;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.like:hover{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.download:hover{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}

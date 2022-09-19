@@ -64,6 +64,7 @@ li:nth-child(4){
 }
 
 .button{
+    font-weight: 600;
     max-width: 110px;
     border-radius: 4px;
     padding: 13px 25px;
@@ -120,6 +121,7 @@ p + button{
 }
 
 .get-started{
+    font-weight: 700;
     padding: 13px 40px;
     color: #fff;
     background-color: #FF9900;
@@ -200,8 +202,26 @@ div.foot{
 }
 
 .block{
+    font-weight: 500;
+    color: #544837;
     display: block;
     padding-bottom: 15px;
+}
+
+a.color{
+    
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+
+    color: #544837;
+}
+
+a.color:hover{
+    color: #544837;
 }
 
 .one{
