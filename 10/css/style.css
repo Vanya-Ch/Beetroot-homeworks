@@ -15,9 +15,15 @@ body{
 }
 
 h2{
-    margin: 120px auto 80px auto;
-    text-align: center;  
-    color:#000
+    margin: 120px auto 80px auto;  
+    color:#000;
+    font-family: Delius Unicase;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    text-align: center;
+
 }
 
 .block-1{
@@ -25,7 +31,7 @@ h2{
     max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 370px);
-    gap: 20px;
+    gap: 30px;
     grid-template-areas: 
     "foto-1 foto-2 foto-2"
     "foto-3 foto-3 foto-4"
@@ -150,7 +156,7 @@ div.blur:hover{
     max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 370px);
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 370px);
 
@@ -214,7 +220,7 @@ div.blur:hover{
     max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 370px);
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 370px);
 
