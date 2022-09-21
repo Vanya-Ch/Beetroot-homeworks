@@ -35,11 +35,7 @@ body{
     padding-right: 30px;
 }
 
-.nav__list>a:nth-last-of-type(){
-    padding-right: 0;
-}
-
-.nav__menu--link:hover{
+.nav__link:hover{
     color: #18B5DC;
 }
 
@@ -177,13 +173,6 @@ a.last{
 .people:hover div.media-link{
     display: block;
 }
-
-
-
-/* .people:hover .white-links{
-    display: inline-block;
-} */
-
 
 .icon__hidden{
     display: none;
