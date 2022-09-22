@@ -170,7 +170,7 @@ a.last{
     display: none;
 }
 
-.people:hover div.media-link{
+.people:hover+div.media-link{
     display: block;
 }
 
