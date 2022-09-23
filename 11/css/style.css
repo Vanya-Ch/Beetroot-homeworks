@@ -10,12 +10,20 @@ body{
     color:#3C3C3C;
 }
 
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #BDBDBD;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav__menu{
@@ -32,7 +40,10 @@ body{
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-right: 30px;
+}
+
+.nav__list+.nav__list{
+    padding-left: 30px;
 }
 
 .nav__link:hover{
@@ -99,6 +110,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 270px;
     height: 270px;
     background-color: #18B5DC;
@@ -107,6 +119,9 @@ body{
 }
 
 .people{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 270px;
     height: 270px;
 }
@@ -156,21 +171,37 @@ a.last{
     padding-right: 10px;
 }
 
-.white-links{
+.white-links{ 
+    height: 42px;
     text-decoration: none;
     padding-right: 5px;
-    /* display: none; */
 }
 
-.media-link{
+.photo-people:hover .people{
     display: none;
 }
 
-.people:hover{
+.icon__blue{
     display: none;
 }
 
-.people:hover+div.media-link{
+.icon__white{
+    display: none;
+}
+
+.photo-people:hover .icon__blue{
+    display: block;
+}
+
+.white-links:hover .icon__blue{
+    display: block;
+}
+
+.white-links:hover .icon__blue{
+    display: none;
+}
+
+.white-links:hover .icon__white{
     display: block;
 }
 
