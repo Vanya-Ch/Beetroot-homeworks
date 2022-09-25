@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.container-header--fixed{
+    position: fixed; 
+    padding: 13px 0;
+    max-width: 1200px;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+}
+
+.container-header--relative{
+    position: relative; 
+}
+
+
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: baseline;
+    min-height: 54px
+}
+
+.eng{
+    font-family: 'Tourney', cursive;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.125rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav .nav__menu{
+    display: inline-block;
+    list-style: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.nav__menu+span{
+    padding: 0 0.625rem;
+}
+
+.eng{
+    padding-top: 16px;
+}
+
+.nav{
+    padding: 13px 0;
+}
+
+.nav, .eng{
+    display: inline-block;
+}
+
+.eng+.nav{
+    padding-left: 50px;
+}
+
+.logo{
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.main{
+    margin-top: 150px;
+}
+
+.main{
+    padding-bottom: 90px;
+}
+
+
+.text-title{
+    font-family: 'Francois One', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.04rem;
+    text-align: left;
+}
+
+.sup{
+    font-family: 'Farro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    max-width: 100px;
+    max-height: 20px;
+    padding-left: 10px;
+}
+
+.title+.text-description{
+    padding-top: 40px;
+}
+
+.chapter+.chapter{
+    margin-top: 70px;
+}
+
+.text-description{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+
+.text-style--underline{
+    text-decoration: underline ;
+}
+
+.text-style--italic{
+    font-style: italic;
+}
+
+.text-description+.text-description{
+    padding-top: 40px;
+}
+
+.text-style--bold{
+    font-weight: 700;
+}
+
+.text-style--tags-background{
+    background-color: #c2c2c2;
+}
+
+.background{
+    position: fixed;
+    top: 150px;
+    right: -132px;
+    z-index: -1;
+}
+
+.container-main--flex{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.container-chapter{
+    max-width: 785px;
+}
+
+.container-aside{
+    /* max-width: 385px; */
+    width: 385px;
+}
+
+.text-title--aside{
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.aside-nav__menu+.aside-nav__menu{
+    padding-top: 70px;
+}
+
+.aside-menu{
+    position: sticky;
+    top: 150px;
+    max-width: 365px;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.blackline{
+    width: 100px;
+    border: 4px solid #000;
+}
+
+.blackline+.text-title{
+    padding-top: 20px;
+}
+
+.who{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    max-width: 326px;
+    padding-bottom: 40px;
+}
+
+.media{
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 20px 0;
+    margin-bottom: 70px;
+}
+
+.media__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    max-width: 270px;
+    max-height: 180px;
+    padding: 70px 35px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+}
+
+.media-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-grid{
+    display: grid;
+    max-width: 1170px;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.white{
+    display: none;
+}
+
+.media-flex:hover .media__link{
+    background-color: #000;
+}
+
+.media-flex:hover .black{
+    display: none;
+}
+
+.media-flex:hover .white{
+    display: block;
+}
+
