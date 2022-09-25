@@ -114,9 +114,9 @@ ul{
 
 .sup{
     font-family: 'Farro', sans-serif;
-    font-size: 16px;
+    font-size: 1.875rem;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 1.875rem;
     letter-spacing: 0.04em;
     text-align: left;
     max-width: 100px;
