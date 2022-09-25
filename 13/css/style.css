@@ -8,6 +8,7 @@ html{
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    z-index: 2;
 }
 
 .container{
@@ -169,7 +170,7 @@ ul{
     position: fixed;
     top: 150px;
     right: -132px;
-    z-index: -2;
+    z-index: -1;
 }
 
 .container-main--flex{
@@ -200,7 +201,7 @@ ul{
     top: 150px;
     max-width: 365px;
     margin: 0 auto;
-    z-index: -1;
+    z-index: 0;
 }
 
 .blackline{
