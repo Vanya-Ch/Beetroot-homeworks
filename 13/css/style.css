@@ -32,14 +32,18 @@ ul{
     position: relative; 
 }
 
-
-
 .header__nav{
     display: flex;
     flex-direction: row;
     column-gap: 50px;
     justify-content: baseline;
     min-height: 54px
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
 }
 
 .eng{
@@ -165,7 +169,7 @@ ul{
     position: fixed;
     top: 150px;
     right: -132px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .container-main--flex{
