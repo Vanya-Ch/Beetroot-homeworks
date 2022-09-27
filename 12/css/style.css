@@ -101,6 +101,8 @@ header+main{
 }
 
 .sup{
+    position: relative;
+    top: -10px;
     font-family: 'Farro', sans-serif;
     font-size: 16px;
     font-weight: 300;
