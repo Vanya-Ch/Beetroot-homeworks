@@ -30,8 +30,6 @@ ul{
 .container-header--fixed{
     padding: 13px 0;
     max-width: 1200px;
-    width: 100%;
-    top: 0;
     background-color: #fff;
 }
 
@@ -101,7 +99,7 @@ ul{
 
 .logo{
     position: absolute;
-    top: 13px;
+    top: 0;
     right: 0;
 }
 
@@ -195,6 +193,7 @@ ul{
 }
 
 .text-title--aside{
+    padding-bottom: 10px;
     border-bottom: 1px solid #bdbdbd;
 }
 
