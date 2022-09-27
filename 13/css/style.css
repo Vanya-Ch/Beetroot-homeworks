@@ -20,8 +20,14 @@ ul{
     list-style: none;
 }
 
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
 .container-header--fixed{
-    position: fixed; 
     padding: 13px 0;
     max-width: 1200px;
     width: 100%;
