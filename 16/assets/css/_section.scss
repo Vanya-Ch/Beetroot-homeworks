@@ -1,0 +1,162 @@
+.section{
+    margin: 120px 0;
+    &__container{
+        @include container
+    }
+    &__subtitle{
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: $gray;
+        text-align: center;
+    }
+    &__title{
+        @include titles;
+        font-size: 3.75rem;
+        line-height: 4.125rem;
+        color: $gold;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    &__subtitle+&__title{
+        padding-top: 15px;
+    }
+    &__box-svg{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-color: $white;
+        padding: 0 5px;
+    }
+    &__box-svg--svg{
+        position: absolute;
+        background-color: $white;
+        padding: 0 5px;
+        height: 20px;
+    }
+    &__box-svg::before{
+        content: '';
+        display: block;
+        width: 450px;
+        height: 1px;
+        background-color: $gold;
+        position: absolute;
+        top: 8px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        max-width: 1030px;
+        margin: 0 auto;
+    }
+    &__content{
+        padding-top: 60px;
+    }
+    &__image{
+        border-right: 1px solid $gold;
+        padding: 80px 100px 80px 15px;
+        
+    }
+    .photo{
+        position: relative;
+    }
+    .angles{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    .angles--top-left{
+        top: -15px;
+        left: -15px;
+        border-top: 1px solid $gold;
+        border-left: 1px solid $gold;
+    }
+    .angles--top-right{
+        top: -15px;
+        right: -15px;
+        border-top: 1px solid $gold;
+        border-right: 1px solid $gold;
+    }
+    .angles--bottom-left{
+        bottom: -15px;
+        left: -15px;
+        border-bottom: 1px solid $gold;
+        border-left: 1px solid $gold;
+    }
+    .angles--bottom-right{
+        bottom: -15px;
+        right: -15px;
+        border-bottom: 1px solid $gold;
+        border-right: 1px solid $gold;
+    }
+    &__text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 0 70px 85px
+    }
+    &__text--title{
+        @include titles;
+        color: $dark-gray;
+        font-size: 2.25rem;
+    }
+    .block{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .block__line{
+        border-top: 1px solid $gold;
+        width: 100px;
+    }
+    &__work-post{
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+        color: $dark-gray;
+        font-weight: 400;
+    }
+    &__media{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 50px;
+    }
+    &__text-about{
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: $black;
+        margin-bottom: 20px;
+    }
+    &__slider{
+        display: flex;
+        justify-content: center;
+    }
+    .slider-centr{
+        display: inline-block;
+        width: 20px;
+        margin: 0 5px;
+        border: 2px solid $gold;
+    }
+    .slider{
+        display: inline-block;
+        width: 10px;
+        border: 2px solid $gold;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    &__button--link{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        text-align: center;
+        padding: 5px 10px;
+        border: 1px solid $gold;
+        text-decoration: none;
+        color: $dark-gray;
+        max-width: 118px;
+    }
+}
