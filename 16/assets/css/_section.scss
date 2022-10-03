@@ -26,6 +26,12 @@
         position: relative;
         background-color: $white;
         padding: 0 5px;
+        &--svg{
+            position: absolute;
+            background-color: $white;
+            padding: 0 5px;
+            height: 20px;
+        }
     }
     &__box-svg--svg{
         position: absolute;
@@ -63,31 +69,32 @@
         width: 100px;
         height: 100px;
         position: absolute;
+        &--top-left{
+            top: -15px;
+            left: -15px;
+            border-top: 1px solid $gold;
+            border-left: 1px solid $gold;
+        }
+        &--top-right{
+            top: -15px;
+            right: -15px;
+            border-top: 1px solid $gold;
+            border-right: 1px solid $gold;
+        }
+        &--bottom-left{
+            bottom: -15px;
+            left: -15px;
+            border-bottom: 1px solid $gold;
+            border-left: 1px solid $gold;
+        }
+        &--bottom-right{
+            bottom: -15px;
+            right: -15px;
+            border-bottom: 1px solid $gold;
+            border-right: 1px solid $gold;
+        }
     }
-    .angles--top-left{
-        top: -15px;
-        left: -15px;
-        border-top: 1px solid $gold;
-        border-left: 1px solid $gold;
-    }
-    .angles--top-right{
-        top: -15px;
-        right: -15px;
-        border-top: 1px solid $gold;
-        border-right: 1px solid $gold;
-    }
-    .angles--bottom-left{
-        bottom: -15px;
-        left: -15px;
-        border-bottom: 1px solid $gold;
-        border-left: 1px solid $gold;
-    }
-    .angles--bottom-right{
-        bottom: -15px;
-        right: -15px;
-        border-bottom: 1px solid $gold;
-        border-right: 1px solid $gold;
-    }
+    
     &__text{
         display: flex;
         justify-content: center;
