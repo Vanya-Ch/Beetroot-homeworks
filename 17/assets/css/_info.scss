@@ -1,0 +1,71 @@
+.info{
+    padding: 90px 0;
+    @media screen and (max-width: $laptop) {
+        padding-top: 70px;
+    }
+    &__container{
+        @include container;
+        @media screen and (max-width: $laptop) {
+            max-width: 700px;
+        }
+        @media screen and (max-width: $phone) {
+            max-width: 300px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media screen and(max-width:$laptop) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+    &__text{
+        max-width: 470px;
+        @media screen and(max-width:$laptop){
+            max-width: 700px;
+        }
+        &--left{
+            @include name;
+            font-weight: 400;
+        }
+        &--right{
+            font-family: $Lato;
+            font-size: 1.1875rem;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: $gray;
+            @media screen and(max-width:$laptop){
+                text-align: right;
+            }
+        }
+    }
+    &__paragraph+&__paragraph{
+        padding-top: 30px;
+    }
+}
+.read-more{
+    &--info{
+        font-family: $Lato;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6875rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+        max-width: 90px;
+        display: block;
+    }
+    
+}
+.arrow{
+    &__text{
+        display: inline-block;
+        width: 100px;
+    }
+    @media screen and(max-width:$laptop) {
+        display: block;
+    }
+}

@@ -5,6 +5,9 @@
 
     &__container{
         @include container;
+        @media screen and (max-width: $phone) {
+            max-width: 300px;
+        }
     }
     &__content{
         width: 100%;
@@ -22,11 +25,16 @@
     display: flex;
     justify-content: space-between;
     gap: 84px;
-    
+    @media screen and (max-width: $laptop) {
+        gap: 40px;
+    }
     &__list{
         display: flex;
         justify-content: space-between;
         gap: 42px;
+        @media screen and (max-width: $laptop) {
+            display: none;
+        }
     }
     &__item{
         position: relative;
@@ -131,12 +139,15 @@
         max-height: 16px;
         transition: all .5s linear;
     }
-    &__search:hover &__loop{
-        transform: translateX(50px);
-    }
     &__search:hover &__input{
-        transform: translateX(-50px);
+        transform: translateX(-100px);
         opacity: 1;
+    }
+    &__burger{
+        display: none;
+        @media screen and (max-width: $laptop) {
+            display: block;
+        }
     }
 }
 

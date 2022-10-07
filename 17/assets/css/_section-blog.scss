@@ -1,20 +1,47 @@
 .section-blog{
     padding-top: 90px;
+    @media screen and (max-width: $laptop) {
+        padding-top: 70px;
+    }
     &__container{
         @include container;
+        @media screen and (max-width: $laptop) {
+            max-width: 700px;
+        }
+        @media screen and (max-width: $phone) {
+            max-width: 300px;
+        }
     }
     &__info{
-        max-width: 448px
+        max-width: 448px;
+    }
+    &__image{
+        @media screen and (max-width:$laptop) {
+            max-width: 340px;
+        }
+        @media screen and (max-width:$phone) {
+            order: 2;
+            max-width: 300px;
+        }
     }
     &__title{
         @include title-h2;
         padding-bottom: 50px;
+        @media screen and (max-width:$phone){
+            text-align: center;
+        }
     }
     &__content{
         display: flex;
         flex-direction: row;
         gap: 30px;
         align-items: center;
+        @media screen and (max-width: $laptop) {
+            gap: 20px;
+        }
+        @media screen and (max-width: $phone){
+            flex-direction: column;
+        }
     }
     &__content+&__content{
         padding-top: 50px
@@ -29,7 +56,10 @@
     }
     &__date{
         @include date;
-        padding-bottom: 50px
+        padding-bottom: 50px;
+        @media screen and (max-width: $laptop) {
+            padding-bottom: 40px;
+        }
     }
     &__description{
         @include description;
@@ -37,6 +67,9 @@
 }
 .read-more{
     position: relative;
+    @media screen and (max-width: $phone){
+        display: none;
+    }
 }
 .arrow{
     fill: $dark-gray;
@@ -44,6 +77,7 @@
     &__text{
         opacity: 0;
         position: absolute;
+        
         left: 0;
         width: 90px;
         color: $black;
@@ -51,7 +85,7 @@
     }
 }
 .read-more:hover .arrow{
-    transform: translateX(85px);
+    transform: translateX(100px);
     fill: $black;
 }
 .read-more:hover .arrow__text{

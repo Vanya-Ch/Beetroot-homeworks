@@ -1,13 +1,108 @@
 .section-latest{
     padding-top: 90px;
+    @media screen and (max-width: $laptop) {
+        padding-top: 70px;
+    }
     &__container{
         @include container;
+        @media screen and (max-width: $laptop) {
+            max-width: 700px;
+        }
+        @media screen and (max-width: $phone) {
+            max-width: 300px;
+        }
     }
     &__title{
         @include title-h2 ;
+        font-weight: 600;
+        @media screen and (max-width:$laptop) {
+            font-size: 1.75rem;
+            line-height: 2.875rem;
+        }
     }
     &__heading{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        @media screen and (max-width: $phone){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    @media screen and (max-width: $laptop) {
+        flex-direction: column;
+
+    }
+    @media screen and (max-width: $phone){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.view-all{
+    color: $gray;
+    &__arrow{
+        fill: $gray;
+    }
+}
+.view-all:hover{
+    color: $black;
+}
+.view-all:hover .view-all__arrow{
+    fill: $black;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: $laptop){
+            flex-direction: row;
+            gap: 20px;
+    }
+    @media screen and (max-width: $phone){
+        flex-direction: column;
+    }
+    &--reverse{
+        @media screen and (max-width: $laptop){
+            flex-direction: row-reverse;
+        }
+        @media screen and (max-width: $phone){
+            flex-direction: column;
+        }
+    }
+    &__img{
+        @media screen and (max-width: $laptop){
+            max-width: 340px;
+        }
+        @media screen and (max-width: $phone){
+            max-width: 300px;
+        }
+    }
+    &__sub{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px 0;
+        @media screen and (max-width: $laptop){
+            padding-top: 0;
+        }
+    }
+    &__date{
+        @include date;
+    }
+    &__tag{
+        @include tag;
+    }
+    &__name{
+        @include name;
+        padding-bottom: 20px;
+    }
+    &__description{
+        @include description;
     }
 }

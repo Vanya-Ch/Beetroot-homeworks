@@ -1,0 +1,81 @@
+.footer{
+    padding-top: 70px;
+    background-color: $footer-bg;
+    &__container{
+        @include container;
+        @media screen and (max-width: $laptop) {
+            max-width: 700px;
+        }
+        @media screen and (max-width: $phone) {
+            max-width: 300px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: $laptop) {
+            flex-direction: column;
+            gap: 40px;
+            text-align: center;
+        }
+    }
+    &__paragraph{
+        color: $black;
+        &--title{
+            font-family: $Red-hat;
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 4rem;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+    }
+    &__paragraph+&__paragraph{
+        padding-top: 14px;
+    }
+    &__paragraph--title+&__paragraph{
+        padding-top: 30px;
+    }
+    &__socials{
+        display: flex;
+        gap: 20px;
+    }
+    &__end{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 20px ;
+        padding-bottom: 30px;
+
+        font-family: $Lato;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+        @media screen and (max-width: $laptop) {
+            padding-top: 40px;
+        }
+    }
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    
+    border: 1px solid $dark-gray;
+    &__svg{
+        fill: $dark-gray;
+    }
+}
+.social-link:hover{
+    background-color: $dark-gray;
+}
+.social-link:hover .social-link__svg{
+    fill: $white;
+}
