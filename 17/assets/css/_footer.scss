@@ -29,6 +29,11 @@
             line-height: 4rem;
             letter-spacing: 0.05em;
             text-align: left;
+            @media screen and (max-width: $phone) {
+                font-size: 2rem;
+                line-height: 2.625rem;
+                text-align: center;
+            }
         }
     }
     &__paragraph+&__paragraph{
