@@ -1,0 +1,48 @@
+@mixin container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+@mixin title-h2{
+    font-family: $Red-hat;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+@mixin tag {
+    font-family: $Lato;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: $gray;
+}
+@mixin name {
+    font-family: $Red-hat;
+    font-size: 1.4375rem;
+    font-weight: 500;
+    line-height: 2.375rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: $black;
+}
+@mixin date {
+    font-family: $Lato;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: $gray;
+}
+@mixin description {
+    font-family: $Lato;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $dark-gray;
+}

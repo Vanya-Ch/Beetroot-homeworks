@@ -1,0 +1,13 @@
+.section-latest{
+    padding-top: 90px;
+    &__container{
+        @include container;
+    }
+    &__title{
+        @include title-h2 ;
+    }
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+    }
+}
