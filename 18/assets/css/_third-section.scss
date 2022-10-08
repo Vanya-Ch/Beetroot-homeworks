@@ -1,0 +1,10 @@
+.third-section{
+    @include section;
+    &__container{
+        @include container;
+    }
+    &__heading{
+        @include heading;
+    }
+    
+}

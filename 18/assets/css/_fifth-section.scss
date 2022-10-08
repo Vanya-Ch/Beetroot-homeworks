@@ -1,0 +1,7 @@
+.fifth-section{
+    @include section;
+    padding-bottom: 90px;
+    &__container{
+        @include container;
+    }
+}

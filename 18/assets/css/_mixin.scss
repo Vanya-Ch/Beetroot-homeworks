@@ -1,0 +1,65 @@
+@mixin container{
+    max-width: calc(1170px / 1440px * 100%);
+    margin: 0 auto;
+    @media screen and (max-width:$laptop) {
+        max-width: calc(700px / 768px * 100%);
+    }
+    @media screen and (max-width:$phone) {
+        max-width: calc(300px / 320px * 100%);
+    }
+} 
+@mixin title {
+    font-family: $Red-hat;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $black;
+    @media screen and (max-width:$laptop) {
+        font-size: 2.0625rem;
+        line-height: 3.125rem;
+    }
+    @media screen and (max-width:$phone) {
+        font-size: 1.875rem;
+        letter-spacing: 0;
+    }
+}
+@mixin heading {
+    font-family: $Red-hat;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2.875rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: $black;
+    padding-bottom: 50px;
+    @media screen and (max-width:$phone) {
+        font-size: 1.625rem;
+    }
+}
+@mixin text {
+    font-family: $Lato;
+    font-size: 1.1875rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $dark-gray;
+    padding-top: 20px;
+    @media screen and (max-width:$phone) {
+        font-size: 1rem;
+    }
+}
+@mixin section {
+    padding-top: 90px;
+    @media screen and (max-width:$laptop) {
+        padding-top: 70px;
+    }
+}
+@mixin image {
+    max-width: 1170px;
+    max-height: 500px;
+    width: 100%;
+    min-height: 300px;
+}

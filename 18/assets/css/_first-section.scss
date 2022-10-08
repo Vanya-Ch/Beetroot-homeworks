@@ -1,0 +1,15 @@
+.first-section{
+    &__container{
+        @include container;
+    }
+    &__title{
+        @include title;
+        padding-bottom: 70px;
+    }
+    /* &__image{
+       @include images;
+        @media screen and(max-width:$phone) {
+            min-height: 300px;
+        }
+    } */
+}

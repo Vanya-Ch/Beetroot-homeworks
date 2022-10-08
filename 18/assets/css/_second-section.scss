@@ -1,0 +1,14 @@
+.second-section{
+    @include section;
+    &__container{
+        @include container;
+    }
+    &__wrapper{
+        max-width: 570px;
+    }
+    &__text{
+        &--noPadding{
+            padding-top: 0;
+        }
+    }
+}
