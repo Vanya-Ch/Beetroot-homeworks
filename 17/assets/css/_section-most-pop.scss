@@ -56,11 +56,14 @@
 }
 
 .block--most{
+    max-width: 570px;
+
     @media screen and (max-width: $laptop){
         flex-direction: column;
     }
 }
 .content--most{
+    justify-content: space-between;
     @media screen and (max-width:$laptop) {
         flex-direction: row;
     }

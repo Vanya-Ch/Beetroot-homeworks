@@ -676,12 +676,18 @@ ol {
   background-color: #000;
 }
 
+.block--most {
+  max-width: 570px;
+}
 @media screen and (max-width: 1170px) {
   .block--most {
     flex-direction: column;
   }
 }
 
+.content--most {
+  justify-content: space-between;
+}
 @media screen and (max-width: 1170px) {
   .content--most {
     flex-direction: row;
