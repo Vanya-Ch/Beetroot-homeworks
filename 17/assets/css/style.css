@@ -328,6 +328,9 @@ ol {
   gap: 30px;
   align-items: center;
 }
+.section-blog__content--right {
+  justify-content: flex-end;
+}
 @media screen and (max-width: 1170px) {
   .section-blog__content {
     gap: 20px;
@@ -388,11 +391,9 @@ ol {
 
 .read-more {
   position: relative;
-}
-@media screen and (max-width: 650px) {
-  .read-more {
-    display: none;
-  }
+  /* @media screen and (max-width: $phone){
+      display: none;
+  } */
 }
 
 .arrow {
