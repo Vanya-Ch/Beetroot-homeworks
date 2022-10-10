@@ -815,6 +815,16 @@ ol {
   padding-top: 70px;
   background-color: #F4F4F4;
 }
+@media screen and (max-width: 1170px) {
+  .footer {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer {
+    padding-top: 50px;
+  }
+}
 .footer__container {
   max-width: 81.25%;
   margin: 0 auto;
@@ -853,6 +863,14 @@ ol {
 }
 .footer__paragraph {
   color: #000;
+  font-family: "Lato", sans-serif;
+}
+@media screen and (max-width: 650px) {
+  .footer__paragraph {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+  }
 }
 .footer__paragraph--title {
   font-family: "Red Hat Display", sans-serif;
@@ -870,7 +888,7 @@ ol {
   }
 }
 .footer__paragraph + .footer__paragraph {
-  padding-top: 14px;
+  padding-top: 15px;
 }
 .footer__paragraph--title + .footer__paragraph {
   padding-top: 30px;
@@ -895,6 +913,14 @@ ol {
 @media screen and (max-width: 1170px) {
   .footer__end {
     padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer__end {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+    text-align: center;
   }
 }
 
