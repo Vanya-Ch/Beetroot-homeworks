@@ -3,8 +3,12 @@
     align-items: center;
     align-content: flex-start;
     justify-content: start;
-    height: 100px;
-    padding: 40px 0;
+    max-height: 100px;
+    padding: 41px 0;
+    @media screen and (max-width:$laptop) {
+        max-height: 60px;
+        padding: 21px 0;
+    }
     &__container{
         @include container;
         width: 100%;

@@ -1,6 +1,12 @@
 .fifth-section{
     @include section;
     padding-bottom: 90px;
+    /* @media screen and (max-width: $laptop) {
+        padding-bottom: 90px;
+    } */
+    @media screen and (max-width: $phone) {
+        padding-bottom: 70px;
+    }
     &__container{
         @include container;
     }
