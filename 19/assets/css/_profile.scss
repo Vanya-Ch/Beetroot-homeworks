@@ -1,0 +1,50 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    &__label{
+        @include input;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 138px;
+        height: 30px;
+        padding: 6px 32px 6px 10px;
+    }
+    &__file{
+        display: none;
+    }
+    &__files{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        &--top{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+    &__subscription{
+        @include description;
+    }
+}
+.head__label--icon{
+    position: absolute;
+    right: 9px;
+}
+.reset{
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+.profile{
+    &__button{
+        @include input;
+        @include button;
+        max-width: 150px;
+        margin-bottom: 104px;
+    }
+}
