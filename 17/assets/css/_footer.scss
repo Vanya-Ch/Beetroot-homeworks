@@ -9,12 +9,7 @@
     }
     &__container{
         @include container;
-        @media screen and (max-width: $laptop) {
-            max-width: 700px;
-        }
-        @media screen and (max-width: $phone) {
-            max-width: 300px;
-        }
+        
     }
     &__content{
         display: flex;

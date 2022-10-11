@@ -30,17 +30,12 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .header__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .header__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .header__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .header__content {
@@ -216,22 +211,12 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .section-first__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .section-first__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .section-first__container {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .section-first__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .section-first__content {
@@ -276,26 +261,20 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .section-blog__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .section-blog__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .section-blog__container {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .section-blog__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .section-blog__info {
   max-width: 448px;
+}
+.section-blog__image {
+  max-width: 570px;
+  width: 100%;
 }
 @media screen and (max-width: 1170px) {
   .section-blog__image {
@@ -432,22 +411,12 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .section-latest__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .section-latest__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .section-latest__container {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .section-latest__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .section-latest__title {
@@ -492,11 +461,20 @@ ol {
   .content {
     flex-direction: column;
     align-items: flex-start;
+    gap: 50px;
   }
 }
 
 .view-all {
+  display: flex;
+  gap: 20px;
   color: #7B7B7B;
+}
+@media screen and (max-width: 769px) {
+  .view-all {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }
 .view-all__arrow {
   fill: #7B7B7B;
@@ -535,6 +513,13 @@ ol {
   .block--reverse {
     flex-direction: column;
   }
+}
+.block__img {
+  max-width: 370px;
+  max-height: 260px;
+  min-height: 240px;
+  min-width: 300px;
+  width: 100%;
 }
 @media screen and (max-width: 1170px) {
   .block__img {
@@ -609,22 +594,12 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .section-most-pop__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .section-most-pop__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .section-most-pop__container {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .section-most-pop__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .section-most-pop__title {
@@ -725,22 +700,12 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .info__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .info__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .info__container {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .info__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .info__content {
@@ -799,6 +764,7 @@ ol {
   text-align: left;
   max-width: 90px;
   display: block;
+  margin-top: 20px;
 }
 
 .arrow__text {
@@ -831,22 +797,12 @@ ol {
 }
 @media screen and (max-width: 769px) {
   .footer__container {
-    max-width: 700px;
+    max-width: 91.1458333333%;
   }
 }
 @media screen and (max-width: 650px) {
   .footer__container {
-    max-width: 300px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .footer__container {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .footer__container {
-    max-width: 300px;
+    max-width: 93.75%;
   }
 }
 .footer__content {

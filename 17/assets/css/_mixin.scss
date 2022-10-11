@@ -2,10 +2,10 @@
     max-width: calc(1170px / 1440px * 100%);
     margin: 0 auto;
     @media screen and (max-width: $mini) {
-        max-width: 700px;
+        max-width: calc(700px / 768px * 100%)
     }
     @media screen and (max-width: $phone) {
-        max-width: 300px;
+        max-width: calc(300px / 320px * 100%)
     }
 }
 @mixin title-h2{

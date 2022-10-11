@@ -5,12 +5,7 @@
     }
     &__container{
         @include container;
-        @media screen and (max-width: $laptop) {
-            max-width: 700px;
-        }
-        @media screen and (max-width: $phone) {
-            max-width: 300px;
-        }
+        
     }
     &__title{
         @include title-h2 ;
@@ -37,15 +32,22 @@
     gap: 30px;
     @media screen and (max-width: $laptop) {
         flex-direction: column;
-
     }
     @media screen and (max-width: $phone){
         flex-direction: column;
         align-items: flex-start;
+        gap: 50px;
     }
 }
 .view-all{
+    display: flex;
+    gap: 20px;
     color: $gray;
+    @media screen and (max-width: $mini) {
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+    }
     &__arrow{
         fill: $gray;
     }
@@ -76,6 +78,11 @@
         }
     }
     &__img{
+        max-width: 370px;
+        max-height: 260px;
+        min-height: 240px;
+        min-width: 300px;
+        width: 100%;
         @media screen and (max-width: $laptop){
             max-width: 340px;
         }
