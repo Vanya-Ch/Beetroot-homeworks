@@ -1,0 +1,17 @@
+.path{
+    fill: $gray-dark;
+}
+
+.header__icons:hover .path__purple{
+    fill: $purple-light;
+}
+
+.aside-menu__bar:hover{
+    background-color: $purple-light;
+}
+.aside-menu__bar:hover .path__white{
+    fill: $white;
+} 
+.aside-menu__bar:hover .aside-menu__text{
+    color: $white;
+}
