@@ -57,12 +57,14 @@ html {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  width: 100%;
 }
 .form__description {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   letter-spacing: -0.1px;
   text-align: left;
+  color: #969696;
 }
 .form__radio {
   display: flex;
@@ -71,7 +73,7 @@ html {
   align-items: center;
 }
 .form__button {
-  width: 245px;
+  width: 100%;
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid #E4E4E4;
@@ -88,6 +90,7 @@ html {
   line-height: 1.125rem;
   letter-spacing: -0.1px;
   text-align: left;
+  color: #969696;
   text-align: center;
   max-width: 410px;
   margin: 0 auto;
@@ -115,7 +118,7 @@ html {
 
 .input {
   display: block;
-  width: 245px;
+  width: 100%;
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid #E4E4E4;
@@ -188,7 +191,7 @@ html {
   position: relative;
 }
 .select__list {
-  width: 245px;
+  width: 100%;
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid #E4E4E4;
@@ -229,7 +232,7 @@ html {
   margin-top: 20px;
 }
 .head__label {
-  width: 245px;
+  width: 100%;
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid #E4E4E4;
@@ -258,6 +261,7 @@ html {
   line-height: 1.125rem;
   letter-spacing: -0.1px;
   text-align: left;
+  color: #969696;
 }
 
 .head__label--icon {
@@ -274,10 +278,6 @@ html {
 }
 
 .profile__button {
-  width: 245px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #E4E4E4;
   padding: 10px;
   width: 100%;
   color: #fff;
@@ -285,6 +285,14 @@ html {
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 22px;
+  padding: 8px 10px;
   max-width: 150px;
   margin-bottom: 104px;
+  border: transparent;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: -0.1000000015px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

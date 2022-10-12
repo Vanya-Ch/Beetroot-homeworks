@@ -42,9 +42,16 @@
 }
 .profile{
     &__button{
-        @include input;
         @include button;
+        padding: 8px 10px;
         max-width: 150px;
         margin-bottom: 104px;
+        border: transparent;
+        border-radius: 6px;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        line-height: 1.375rem;
+        letter-spacing: -0.10000000149011612px;
+        text-align: center;
     }
 }
