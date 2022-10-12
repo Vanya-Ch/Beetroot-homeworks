@@ -90,6 +90,7 @@ html {
 
 .aside-menu__bar:hover {
   background-color: #9e8cfc;
+  cursor: pointer;
 }
 
 .aside-menu__bar:hover .path__white {

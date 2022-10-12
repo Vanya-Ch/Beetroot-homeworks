@@ -8,6 +8,7 @@
 
 .aside-menu__bar:hover{
     background-color: $purple-light;
+    cursor: pointer;
 }
 .aside-menu__bar:hover .path__white{
     fill: $white;
