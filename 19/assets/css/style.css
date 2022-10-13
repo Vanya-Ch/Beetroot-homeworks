@@ -262,6 +262,7 @@ html {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  padding-top: 10px;
 }
 .head__subscription {
   font-size: 0.8125rem;
