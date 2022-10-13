@@ -43,9 +43,12 @@
         align-items: center;
     }
     &__button{
-        @include input;
         @include button;
-    }
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+}
     &__subscription{
         @include description;
         text-align: center;
