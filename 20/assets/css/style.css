@@ -90,6 +90,7 @@ html {
 
 .aside-menu__bar:hover {
   background-color: #9e8cfc;
+  box-shadow: 0px 0px 20px rgba(158, 140, 252, 0.7);
   cursor: pointer;
 }
 
@@ -105,7 +106,7 @@ html {
   background-image: url(../images/bg.png);
   max-width: 1220px;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   background-repeat: no-repeat;
 }
 
@@ -113,16 +114,24 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  height: 150vh;
+  height: 100vh;
   max-width: 86px;
   width: 100%;
   padding-bottom: 30px;
   background-color: #fff;
+  overflow: visible;
+  overflow-y: scroll;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+}
+.aside-menu::-webkit-scrollbar {
+  color: transparent;
+  z-index: -999;
+  width: 0;
+  background-color: transparent;
 }
 .aside-menu__logo {
   display: flex;
@@ -161,6 +170,7 @@ html {
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+  z-index: 999;
 }
 .aside-menu__bar {
   display: flex;
