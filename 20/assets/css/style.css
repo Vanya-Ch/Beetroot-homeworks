@@ -140,11 +140,11 @@ body {
 }
 .aside-menu__scroll {
   padding-bottom: 30px;
-  overflow-y: scroll;
-  height: 100%;
-  /* &::-webkit-scrollbar{
-      width: 0;
-  } */
+  overflow-y: auto;
+  height: 90vh;
+}
+.aside-menu__scroll::-webkit-scrollbar {
+  width: 0;
 }
 .aside-menu__logo {
   display: flex;

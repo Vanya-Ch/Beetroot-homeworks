@@ -12,11 +12,11 @@
     -o-transition: all .3s linear;
     &__scroll{
         padding-bottom: 30px;
-        overflow-y: scroll;
-        height: 100%;
-            /* &::-webkit-scrollbar{
+        overflow-y: auto;
+        height: 90vh;
+            &::-webkit-scrollbar{
                 width: 0;
-            } */
+            }
     }
     
     &__logo{
