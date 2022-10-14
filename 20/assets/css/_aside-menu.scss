@@ -2,24 +2,23 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
     max-width: 86px;
     width: 100%;
-    padding-bottom: 30px;
     background-color: #fff;
-    overflow: visible;
-    overflow-y: scroll;
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
-    &::-webkit-scrollbar{
-        color: transparent;
-        z-index: -999;
-        width: 0;
-        background-color: transparent;
+    &__scroll{
+        padding-bottom: 30px;
+        overflow-y: scroll;
+        height: 100%;
+            /* &::-webkit-scrollbar{
+                width: 0;
+            } */
     }
+    
     &__logo{
         display: flex;
         flex-direction: row;
@@ -172,6 +171,14 @@
             .aside-menu__icon--notification--five{
                 opacity: 1;
             }
+            & ~ .page-content{
+                transition: all .3s linear;
+                margin-left: 220px;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+}
         }
     }
 }
