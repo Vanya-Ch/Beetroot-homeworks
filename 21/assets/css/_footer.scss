@@ -1,0 +1,49 @@
+.footer{
+    margin: 100px 0 70px;
+    padding-top: 70px;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);;
+    &__container{
+        @include container;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__heading{
+        @include footer-headings;
+        max-width: 280px;
+    }
+    &-menu__item{
+        padding-top: 15px;
+    }
+    &__heading+&-menu__item{
+        padding-top: 30px;
+    }
+    &__logo{
+        max-width: 340px;
+    }
+    &__form{
+        max-width: 340px;
+    }
+    &__input-tel{
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        width: 100%;
+        padding: 15px 10px;
+        &:invalid{
+            outline: red;
+        }
+        &::placeholder{
+            color: #BCD0E5;
+        }
+    }
+    &__button{
+        @include button;
+        padding: 13px 38px;
+    }
+    &__heading+&__input-tel{
+        margin: 25px 0;
+    }
+    
+}

@@ -1,0 +1,52 @@
+.header{
+    max-height: 80px;
+    margin: 17px 0 87px;
+    &__container{
+        @include container;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__buttons{
+        display: flex;
+        gap: 32px;
+    }
+    &__button{
+        text-decoration: none;
+        padding: 13px 26px;
+        background-color: $active-col;
+        color: $white;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+}
+    &__button:hover{
+        color: $heading-col;
+        background-color: #fff;
+        border: 1px solid #BCD0E5;
+    }
+
+}
+.menu{
+    &__list{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    &__item:hover{
+        color: $active-col;
+        cursor: pointer;
+    }
+    
+}
