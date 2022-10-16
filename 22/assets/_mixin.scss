@@ -1,0 +1,104 @@
+@mixin container {
+    max-width: (1200px / 1440px) * 100%;
+    margin: 0 auto;
+}
+@mixin card {
+    background-color: $card-bg;
+    max-width: 370px;
+    width: 100%;
+    max-height: 611px;
+    filter: drop-shadow(0px 0px 20px #8677EF);
+    -webkit-filter: drop-shadow(0px 0px 20px #8677EF);
+    
+}
+@mixin head {
+    display: flex;
+        justify-content: center;
+        max-height: 164px;
+        padding: 40px 0 30px;
+}
+@mixin cost {
+    font-family: $Bebas ;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    text-align: left;
+    display: flex;
+    max-height: 50px;
+}
+@mixin sup {
+    font-family: $Bebas ;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+@mixin sub {
+    font-size: 1rem;
+    font-family: $Bebas ;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+@mixin direction {
+    display: flex;
+    justify-content: center;
+    font-family: $Bebas;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+}
+@mixin info {
+    width: 100%;
+    background-image: url(../assets/images/bg-image.png);
+    background-size: cover;
+    padding: 40px 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+@mixin list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@mixin foot {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 57px;
+}
+@mixin button {
+    position: absolute;
+    bottom: -50%;
+    text-decoration: none;
+    color: $white;
+    background-color: $button-bg;
+    padding: 20px 50px;
+    max-height: 54px;
+    
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-transform: uppercase;
+}
+@mixin hide-text {
+    position: absolute;
+    opacity: 0;
+    bottom: 30px;
+    font-size: 0.6875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #A9A9A9;
+}

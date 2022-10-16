@@ -1,0 +1,105 @@
+.main{
+    /* height: 100vh; */
+    background: $purple;
+    padding: 120px 0;
+    &__container{
+        @include container;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        @media screen and(max-width:941px) {
+            flex-direction: column;
+            gap: 80px;
+        }
+    }
+}
+
+
+
+
+
+
+
+.card{
+    transition:all .3s linear;
+    position: relative;
+    @include card;
+    &__head{
+        @include head;
+    }
+    &__cost{
+        @include cost;
+    }
+    &__sup{
+        @include sup;
+    }
+    &__sub{
+        @include sub;
+    }
+    &__direction{
+       @include direction;
+    }
+    &__cost+&__direction{
+        padding-top: 20px;
+    }
+    &__info{
+        @include info;
+    }
+    &__list{
+        @include list;
+    }
+    &__foot{
+        @include foot;
+        transition:all .3s linear;
+    }
+    &__button{
+        @include button;
+        transition:all .3s linear;
+        &:hover{
+            background-color: #FD8D7B;
+        }
+    }
+    &__hide-text{
+        @include hide-text;
+        transition:all .3s linear;
+    }
+    &__badge{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+        &--inside{
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        &--tooltip{
+            
+            position: absolute;
+            left: 53px;
+            z-index: 3;
+        }
+    }
+
+    &:hover{
+        max-width: 400px;
+        max-height: 673px;
+    }
+    &:hover &__foot{
+        height: 92px;
+    }
+    &:hover &__button{
+        top: -30%;
+    }
+    &:hover &__hide-text{
+        opacity: 1;
+    }
+    &:hover &__badge{
+        display: flex;
+    }
+}

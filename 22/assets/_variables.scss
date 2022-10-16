@@ -1,0 +1,21 @@
+$black: #000;
+$white:#fff;
+$dark:#181818;
+$purple: #9789F9;
+$card-bg:#F5F3F9;
+$button-bg:#6FCFFB;
+
+@font-face {
+    font-family: "Bebas";
+    src: url(../assets/fonts/Bebas-Neue.ttf) format("truetype");
+    font-weight: 100;
+} 
+@font-face {
+    font-family: "Bebas";
+    src: url(../assets/fonts/Bebas-Neue.ttf) format("truetypy");
+    font-weight: 400;
+} 
+
+$Roboto: 'Roboto', sans-serif;
+$Bebas: 'Bebas Neue', cursive;
+
