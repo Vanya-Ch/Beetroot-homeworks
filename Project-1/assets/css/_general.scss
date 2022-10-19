@@ -1,0 +1,24 @@
+*,
+:after,
+:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html{
+    font-family: $Josefin;
+    font-size: 16px;
+    line-height: 1.75rem;
+    color: $white;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: left;
+    height: 100vh;
+}
+
+ul,
+ol{
+    list-style: none;
+}

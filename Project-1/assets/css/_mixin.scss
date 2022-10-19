@@ -1,0 +1,37 @@
+@mixin container {
+    max-width: (1320px / 1920px) * 100%;
+    margin: 0 auto;
+    @media screen and (max-width:1700px) {
+        max-width: 1140px / 1360px * 100%;
+    }
+    @media screen and (max-width:$laptop) {
+        max-width: 960px / 1024px * 100%;
+    }
+    @media screen and (max-width:$tablet) {
+        max-width: 720px / 768px * 100%;
+    }
+    @media screen and (max-width:$phone) {
+        max-width: 540px / 576px * 100%;
+    }
+    @media screen and (max-width:400px) {
+        max-width: 300px / 320px * 100%;
+    }
+}
+@mixin button {
+    max-width: 213px;
+    max-height: 60px;
+    
+    padding: 20px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    background-color: $blue;
+    &:hover{
+        background-color: #54c1d4;;
+    }
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}

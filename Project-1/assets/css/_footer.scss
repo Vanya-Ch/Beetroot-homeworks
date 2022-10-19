@@ -1,0 +1,47 @@
+.footer{
+    
+    height: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        font-family: $Josefin ;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        padding-bottom: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    &__socials{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:hover .footer__path{
+            fill: $blue;
+        }
+    }
+    &__path{
+        fill: $white;
+    }
+}

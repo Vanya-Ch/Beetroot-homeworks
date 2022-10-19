@@ -1,0 +1,66 @@
+.section-book{
+    max-height: 684px;
+    padding: 220px 0 120px;
+    @media screen and (max-width:$tablet) {
+        padding: 120px 0;
+    }
+    &--one{
+        background-image: url(../images/book-1.png);
+    }
+    &--two{
+        background-image: url(../images/book-2.png);
+    }
+    &__container{
+        @include container;
+    }
+    &__content{
+        background-color: $book-bg;
+        max-width: 648px;
+        width: 100%;
+        padding: 44px 32px;
+        @media screen and (max-width:$desktop) {
+            max-width: 558px;
+        }
+        @media screen and (max-width:$desktop) {
+            max-width: 550px;
+        }
+        @media screen and (max-width:$tablet) {
+            max-width: 100%;
+            padding: 46px 32px;
+        }
+    }
+    &__right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__suptitle{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+    }
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+    }
+    &__text{
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    &__button{
+        @include button;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 213px;
+        
+    }
+    &__suptitle+&__title{
+        margin: 16px 0;
+    }
+}
