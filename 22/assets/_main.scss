@@ -20,17 +20,17 @@
 .card{
     transition:all .3s linear;
     position: relative;
-    z-index: 100;
+    
     transform:translateZ(0);
     @include card;
     &__head{
         @include head;
     }
     &--one{
-        z-index: 2;
+        z-index: 4;
     }
     &--two{
-        z-index: 1;
+        z-index: 3;
     }
     &__cost{
         @include cost;
