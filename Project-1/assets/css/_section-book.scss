@@ -5,10 +5,10 @@
         padding: 120px 0;
     }
     &--one{
-        background-image: url(../images/book-1.png);
+        background-image: url(../images/book-1.webp);
     }
     &--two{
-        background-image: url(../images/book-2.png);
+        background-image: url(../images/book-2.webp);
     }
     &__container{
         @include container;

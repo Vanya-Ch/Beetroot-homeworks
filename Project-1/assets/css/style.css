@@ -25,7 +25,7 @@ ol {
 }
 
 .header {
-  background-image: url(../images/HeaderBackground.png);
+  background-image: url(../images/HeaderBackground.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 295px 0 0;
@@ -415,7 +415,7 @@ ol {
 }
 
 .section-why {
-  background-image: url(../images/WhyBackground.png);
+  background-image: url(../images/WhyBackground.webp);
   padding: 124px 0;
 }
 @media screen and (max-width: 815px) {
@@ -743,10 +743,10 @@ ol {
   }
 }
 .section-book--one {
-  background-image: url(../images/book-1.png);
+  background-image: url(../images/book-1.webp);
 }
 .section-book--two {
-  background-image: url(../images/book-2.png);
+  background-image: url(../images/book-2.webp);
 }
 .section-book__container {
   max-width: 68.75%;
@@ -851,7 +851,7 @@ ol {
 
 .section-comment {
   padding: 120px 0 180px;
-  background-image: url(../images/comment-bg.png);
+  background-image: url(../images/comment-bg.webp);
 }
 @media screen and (max-width: 815px) {
   .section-comment {
