@@ -788,11 +788,6 @@ ol {
     max-width: 558px;
   }
 }
-@media screen and (max-width: 1360px) {
-  .section-book__content {
-    max-width: 550px;
-  }
-}
 @media screen and (max-width: 815px) {
   .section-book__content {
     max-width: 100%;
