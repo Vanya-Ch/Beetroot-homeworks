@@ -27,6 +27,7 @@
         line-height: 28px;
         letter-spacing: 0.31em;
         text-align: center;
+        padding-top: 8px;
     }
     &__form{
         display: flex;
@@ -80,13 +81,32 @@
         padding-top: 48px;
     }
     &__scroll{
-        display: flex;
         flex-direction: column;
         gap: 4px;
         max-width: 102px;
         margin: 209px auto 122px;
+        text-decoration: none;
+        &:hover .header__scroll-text{
+            color: #ff0000;
+        }
+        &:hover .header__scroll-arrow{
+            fill: #ff0000;
+        }
+        
     }
+    &__scroll-text{
+        text-decoration: none;
+        color: $white;
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        
+}
     &__scroll-arrow{
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
         animation: scrollArrow 4s linear 3s infinite;
         -webkit-animation: scrollArrow 4s linear 3s infinite;
@@ -111,7 +131,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 32px 0;
-        max-height: 86px;
+        max-height: 84px;
         @media screen and (max-width:$tablet) {
             flex-direction: column;
             justify-content: center;
@@ -140,6 +160,9 @@
         gap: 40px;
         @media screen and (max-width:$tablet) {
             margin-top: 32px;
+        }
+        @media screen and (max-width:634px) {
+            gap: 22px;
         }
         @media screen and (max-width:$phone) {
             flex-direction: column;
@@ -238,8 +261,8 @@
         justify-content: center;
         position: absolute;
         right: 20px;
-        padding: 19px;
-        height: 40px;
+        
+        height: 24px;
         width: 40px;
         border-top: 1px solid $white;
         border-bottom: 1px solid $white;

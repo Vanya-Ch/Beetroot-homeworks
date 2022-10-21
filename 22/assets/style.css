@@ -72,6 +72,12 @@ ol {
   max-height: 164px;
   padding: 40px 0 30px;
 }
+.card--one {
+  z-index: 2;
+}
+.card--two {
+  z-index: 1;
+}
 .card__cost {
   font-family: "Bebas Neue", cursive;
   font-size: 3.75rem;

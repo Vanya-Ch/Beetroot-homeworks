@@ -3,7 +3,6 @@
     padding: 124px 0;
     @media screen and (max-width: $tablet) {
         padding: 60px 0;
-        max-height: 659px;
     }
     @media screen and (max-width: $phone) {
        max-height: none;
@@ -14,13 +13,14 @@
     &__content{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 136px;
         align-items: center;
         width: 100%;
         max-height: 456px;
         @media screen and (max-width: $tablet) {
             flex-direction: column-reverse;
             max-height: none;
+            gap: 32px;
         }
     }
     &__left-side{
@@ -90,6 +90,7 @@
             flex-direction: row;
             justify-content: center;
             margin-bottom: 32px;
+            overflow: hidden;
         }
         @media screen and (max-width: 450px) {
             flex-direction: column;

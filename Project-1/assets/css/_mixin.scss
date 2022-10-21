@@ -20,12 +20,16 @@
 @mixin button {
     max-width: 213px;
     max-height: 60px;
-    
-    padding: 20px 25px;
+    font-family: $Aleo;
+    padding: 20px 35px;
     text-transform: uppercase;
     text-decoration: none;
     color: $white;
     background-color: $blue;
+    background-image: url(../images/button-bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    white-space: nowrap;
     &:hover{
         background-color: #54c1d4;;
     }
@@ -34,4 +38,7 @@
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
+    &:active{
+        background-color: rgba(132, 255, 121, 0.7);
+    }
 }

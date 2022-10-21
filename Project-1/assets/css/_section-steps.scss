@@ -1,8 +1,7 @@
 .section-steps{
-    
-    height: 306px;
     padding: 107px 0 60px;
     background-color: $dark-gray;
+    
     @media screen and (max-width:$tablet) {
         height: auto;
         max-height: 658px;

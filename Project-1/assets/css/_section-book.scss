@@ -21,7 +21,7 @@
         @media screen and (max-width:$desktop) {
             max-width: 558px;
         }
-        @media screen and (max-width:$desktop) {
+        @media screen and (max-width:1360px) {
             max-width: 550px;
         }
         @media screen and (max-width:$tablet) {
@@ -57,8 +57,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 213px;
-        
     }
     &__suptitle+&__title{
         margin: 16px 0;

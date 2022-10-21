@@ -26,6 +26,12 @@
     &__head{
         @include head;
     }
+    &--one{
+        z-index: 2;
+    }
+    &--two{
+        z-index: 1;
+    }
     &__cost{
         @include cost;
     }
