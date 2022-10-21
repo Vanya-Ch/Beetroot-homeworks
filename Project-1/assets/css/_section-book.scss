@@ -18,8 +18,8 @@
         max-width: 648px;
         width: 100%;
         padding: 44px 32px;
-        @media screen and (max-width:$desktop) {
-            max-width: 558px;
+        @media screen and (max-width:1360px) {
+            max-width: 550px;
         }
         @media screen and (max-width:$tablet) {
             max-width: 100%;

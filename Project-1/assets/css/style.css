@@ -783,9 +783,9 @@ ol {
   width: 100%;
   padding: 44px 32px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1360px) {
   .section-book__content {
-    max-width: 558px;
+    max-width: 550px;
   }
 }
 @media screen and (max-width: 815px) {
