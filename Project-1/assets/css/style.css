@@ -256,7 +256,6 @@ ol {
 }
 @media screen and (max-width: 580px) {
   .navigation__content {
-    align-items: flex-start;
     height: 86px;
     padding: 28px 0;
   }
