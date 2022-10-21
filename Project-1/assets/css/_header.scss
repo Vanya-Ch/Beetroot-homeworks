@@ -85,14 +85,18 @@
         gap: 4px;
         max-width: 102px;
         margin: 209px auto 122px;
-        text-decoration: none;
+        z-index: 2;
         &:hover .header__scroll-text{
             color: #ff0000;
         }
         &:hover .header__scroll-arrow{
             fill: #ff0000;
         }
-        
+        &--link{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
     }
     &__scroll-text{
         text-decoration: none;
