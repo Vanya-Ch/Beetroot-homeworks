@@ -530,10 +530,11 @@ ol {
   background-color: #5373FD;
   white-space: nowrap;
   overflow: hidden;
+  z-index: 2;
   margin-top: 8px;
   z-index: 3;
 }
-.section-why__button::before {
+.section-why__button::after {
   content: "";
   display: block;
   position: absolute;
@@ -546,15 +547,15 @@ ol {
   -moz-transform: skewX(45deg) translateX(-10%);
   -ms-transform: skewX(45deg) translateX(-10%);
   -o-transform: skewX(45deg) translateX(-10%);
-  z-index: 0;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   opacity: 0.8;
+  z-index: 0;
 }
-.section-why__button:hover::before {
+.section-why__button:hover::after {
   left: 0;
   width: 50%;
   transform: translateX(-30%) skewX(45deg);
@@ -562,6 +563,7 @@ ol {
   -moz-transform: translateX(-30%) skewX(45deg);
   -ms-transform: translateX(-30%) skewX(45deg);
   -o-transform: translateX(-30%) skewX(45deg);
+  z-index: -1;
 }
 .section-why__button:hover {
   background-color: #54c1d4;
@@ -863,11 +865,12 @@ ol {
   background-color: #5373FD;
   white-space: nowrap;
   overflow: hidden;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-book__button::before {
+.section-book__button::after {
   content: "";
   display: block;
   position: absolute;
@@ -880,15 +883,15 @@ ol {
   -moz-transform: skewX(45deg) translateX(-10%);
   -ms-transform: skewX(45deg) translateX(-10%);
   -o-transform: skewX(45deg) translateX(-10%);
-  z-index: 0;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   opacity: 0.8;
+  z-index: 0;
 }
-.section-book__button:hover::before {
+.section-book__button:hover::after {
   left: 0;
   width: 50%;
   transform: translateX(-30%) skewX(45deg);
@@ -896,6 +899,7 @@ ol {
   -moz-transform: translateX(-30%) skewX(45deg);
   -ms-transform: translateX(-30%) skewX(45deg);
   -o-transform: translateX(-30%) skewX(45deg);
+  z-index: -1;
 }
 .section-book__button:hover {
   background-color: #54c1d4;
