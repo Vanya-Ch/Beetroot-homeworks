@@ -61,6 +61,8 @@
     &__button{
         @include button;
         margin-top: 8px;
+
+        z-index: 3;
         @media screen and (max-width: $tablet) {
             margin: 0 auto;
         }
