@@ -539,7 +539,7 @@ ol {
   display: block;
   position: absolute;
   left: 0;
-  width: 150%;
+  width: 130%;
   height: 100%;
   background-color: #486BFE;
   transform: skewX(45deg) translateX(-10%);
@@ -875,7 +875,7 @@ ol {
   display: block;
   position: absolute;
   left: 0;
-  width: 150%;
+  width: 130%;
   height: 100%;
   background-color: #486BFE;
   transform: skewX(45deg) translateX(-10%);
