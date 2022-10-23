@@ -120,6 +120,11 @@ ol {
   letter-spacing: 0.2em;
   text-align: left;
 }
+@media screen and (max-width: 520px) {
+  .header__form-input {
+    padding: 21px 36px;
+  }
+}
 .header__form-button {
   display: flex;
   align-items: center;
@@ -145,6 +150,14 @@ ol {
 .header__form-button:hover {
   background-color: #54c1d4;
   cursor: pointer;
+}
+@media screen and (max-width: 520px) {
+  .header__form-button {
+    top: 100%;
+    right: 0;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .header__subtitle + .header__form {
   padding-top: 48px;

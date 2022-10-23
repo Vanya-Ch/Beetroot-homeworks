@@ -50,6 +50,9 @@
             letter-spacing: 0.2em;
             text-align: left;
         }
+        @media screen and (max-width:520px) {
+            padding: 21px 36px;
+        }
     }
     &__form-button{
         display: flex;
@@ -75,6 +78,12 @@
         &:hover{
             background-color: #54c1d4;
             cursor: pointer;
+        }
+        @media screen and (max-width:520px) {
+            top: 100%;
+            right: 0;
+            justify-content: center;
+            width: 100%;
         }
     }
     &__subtitle+&__form{
