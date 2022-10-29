@@ -7,7 +7,7 @@ console.log(userAge);
 let square = prompt('Set the side of the square');
 console.log(square**2);
 let radius = prompt('Set circle radius');
-let circleSquare = radius**2 * 3.14;
+let circleSquare = radius**2 * Math.PI;
 console.log(circleSquare);
 
 let distance = prompt('How far are you planning to travel (kilometers)?')
