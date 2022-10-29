@@ -3,12 +3,12 @@ console.log('Привіт ' + userName);
 let userBorn = prompt('What year you were born?');
 const YEAR = 2022;
 let userAge = YEAR - userBorn;
-console.log(userAge);
+console.log('Your age ' + userAge);
 let square = prompt('Set the side of the square');
-console.log(square**2);
+console.log('Square '+square**2);
 let radius = prompt('Set circle radius');
 let circleSquare = radius**2 * Math.PI;
-console.log(circleSquare);
+console.log('Circle square '+circleSquare);
 
 let distance = prompt('How far are you planning to travel (kilometers)?')
 let time = prompt('How many time are you planning to spend (hours)?')
