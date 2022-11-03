@@ -19,7 +19,7 @@ let number = Math.round(money/price);
 let oddMoney = money % price;
 console.log("You have "+ number + " chocolate bars" + ", " + "and still have " + oddMoney + " some(currency) in your pocket ;)" )
 
-let x = prompt("write your number");
+let x = prompt("Write your number");
 let y = 0;
 for(; x; x = Math.floor(x / 10)) {
     y *= 10;
