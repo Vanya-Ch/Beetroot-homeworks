@@ -30,7 +30,7 @@ console.log(y + " reverse number");
 let dep = prompt("Invest to bank for 2 month")
 const persent = 5 / 100;
 let months = 2;
-let year = 12;
+const year = 12;
 let profit = dep * persent / (year / months);
 console.log(profit + " your profit");
 
