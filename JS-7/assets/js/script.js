@@ -114,8 +114,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 openNewWindow();
 
     function switchLight(){
-        let div = document.createElement('div'),
-            colors = ["red","yellow","green"];
+        let div = document.createElement('div');
+        const colors = ["red","yellow","green"];
         
         div.classList.add('colors');
         div.textContent = "Click on me!"
