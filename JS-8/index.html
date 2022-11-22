@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-8</title>
+    <style>
+        .default{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: rgba(77, 105, 91, 0.5);
+        }
+        .change{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+            border: 1px solid black;
+
+        }
+        table{
+            width: 500px;
+            margin-top: 100px;
+        }
+        th,td{
+            margin-right: 30px;
+            text-align: center;
+            border: 1px solid #000;
+            background-color: rgb(235, 235, 235);
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <div id="content">
+
+        </div>
+        <div class="change" id="change">
+            Change size
+        </div>
+
+
+        <table id="table" class="table">
+            <caption>Sorted table</caption>
+            <thead>
+                <tr>
+                    <th data-type="number">#</th>
+                    <th data-type="date">Date</th>
+                    <th data-type="number">Number</th>
+                    <th data-type="string">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>26.05.2001</td>
+                    <td>198</td>
+                    <td>Ivan</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>30.01.2020</td>
+                    <td>12</td>
+                    <td>Sergiy</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>15.03.2004</td>
+                    <td>596</td>
+                    <td>Victoria</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>03.04.2008</td>
+                    <td>26</td>
+                    <td>Oleksandr</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>08.08.2009</td>
+                    <td>1</td>
+                    <td>Tanya</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+
+
+
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
