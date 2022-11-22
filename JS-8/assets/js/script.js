@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 document.addEventListener('mouseup', () =>{
                     return change.style.height = height + difY + "px";
                 })
+                return;
             })
         }
         
