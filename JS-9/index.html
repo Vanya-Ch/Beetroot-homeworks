@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-9</title>
+    <style>
+        .my-swiper{
+            height: 700px;
+            width: 100%;
+        }
+        .slider-wrap{
+           
+            position: relative;
+        }
+        #swiper-pagination{
+            bottom: 50px;
+        }
+        .gragient{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
+            display: flex;
+            justify-content: center;
+        }
+        .swiper-pagination-bullet{
+            background: rgba(248, 241, 234, 0.7);
+            height: 15px;
+            width: 15px;
+            margin: 0 30px;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet:focus{
+            background: #F16A50;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+            margin: 0 30px;
+        }
+        .block-wrap{
+           
+            display: flex;
+            justify-content: center;
+        }
+        .image-wrap{
+            position: relative;
+        }
+        .image-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            position: absolute;
+            top: 120px;
+            right: 100px;
+            color: #F8F1EA;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 61px;
+            max-width: 400px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .image-button{
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #F8F1EA;
+            padding: 15px 57px;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .image-button:hover{
+            background: #F16A50;
+            border: 2px solid #F16A50;
+            cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <main>
+        <div class="swiper my-swiper">
+
+            <div class="swiper-wrapper slider-wrap">
+
+              <div class="swiper-slide gradient">
+                <div class="block-wrap">
+                    <div class="image-wrap">
+
+                        <img src="assets/images/image.png" alt="">
+                        <div class="image-text">
+                            discover new options
+                            <a href="" class="image-button">
+                                View more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide gradient">
+                <div class="block-wrap">
+
+                    <div class="image-wrap">
+                        <img src="assets/images/image (1).png" alt="">
+                        <div class="image-text">
+                            expand your horizons
+                            <a href="" class="image-button">
+                                View more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide gradient">
+                <div class="block-wrap">
+
+                    <div class="image-wrap">
+                        <img src="assets/images/image (2).png" alt="">
+                        <div class="image-text">
+                            Find your own style
+                            <a href="" class="image-button">
+                                View more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="swiper-pagination" id="swiper-pagination"></div>
+            
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
