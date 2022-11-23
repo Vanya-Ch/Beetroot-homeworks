@@ -13,40 +13,26 @@
     <style>
         .my-swiper{
             height: 700px;
-            width: 100%;
+            
         }
-        .slider-wrap{
-           
-            position: relative;
-        }
-        #swiper-pagination{
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
             bottom: 50px;
-        }
-        .gragient{
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
-            display: flex;
-            justify-content: center;
-        }
-        .swiper-pagination-bullet{
-            background: rgba(248, 241, 234, 0.7);
-            height: 15px;
-            width: 15px;
-            margin: 0 30px;
-            opacity: 1;
-        }
-        .swiper-pagination-bullet:focus{
-            background: #F16A50;
         }
         .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
             margin: 0 30px;
+            height: 20px;
+            width: 20px;
+            background: #fff;
+            bottom: 50px;
         }
         .block-wrap{
-           
+           position: relative;
             display: flex;
             justify-content: center;
         }
         .image-wrap{
             position: relative;
+            
         }
         .image-text{
             display: flex;
@@ -64,6 +50,11 @@
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
             text-align: center;
+            z-index: 3;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{
+           
+            background-color: #F16A50;
         }
         .image-button{
             text-decoration: none;
@@ -80,6 +71,12 @@
             border: 2px solid #F16A50;
             cursor: pointer;
         }
+        .block-gradient{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
+        }
       </style>
 </head>
 <body>
@@ -88,24 +85,28 @@
 
             <div class="swiper-wrapper slider-wrap">
 
-              <div class="swiper-slide gradient">
+              <div class="swiper-slide">
                 <div class="block-wrap">
+                    
                     <div class="image-wrap">
-
+                        <div class="block-gradient"></div>
                         <img src="assets/images/image.png" alt="">
                         <div class="image-text">
                             discover new options
                             <a href="" class="image-button">
                                 View more
                             </a>
+                            
                         </div>
                     </div>
+                    
                 </div>
               </div>
-              <div class="swiper-slide gradient">
+              <div class="swiper-slide">
                 <div class="block-wrap">
-
+                    
                     <div class="image-wrap">
+                        <div class="block-gradient"></div>
                         <img src="assets/images/image (1).png" alt="">
                         <div class="image-text">
                             expand your horizons
@@ -116,10 +117,11 @@
                     </div>
                 </div>
               </div>
-              <div class="swiper-slide gradient">
+              <div class="swiper-slide">
                 <div class="block-wrap">
 
                     <div class="image-wrap">
+                        <div class="block-gradient"></div>
                         <img src="assets/images/image (2).png" alt="">
                         <div class="image-text">
                             Find your own style
