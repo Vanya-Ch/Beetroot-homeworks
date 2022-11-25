@@ -18,3 +18,7 @@ html{
 ul,ol{
     list-style: none;
 }
+
+.button{
+    @include button;
+}

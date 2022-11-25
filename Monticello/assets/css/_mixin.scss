@@ -2,3 +2,33 @@
     max-width: 1170px / 1600px * 100% ;
     margin: 0 auto;
 }
+@mixin footer-container {
+    max-width: 770px/1600px*100%;
+    margin: 0 auto;
+}
+@mixin button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 190px;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 16px 41px;
+    
+    color: $black;
+    border: 1px solid $black;
+    &:hover{
+        background-color: $black;
+        color: $white;
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+    }
+}
+@mixin titles {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+}

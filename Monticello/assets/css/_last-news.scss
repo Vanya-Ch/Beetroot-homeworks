@@ -1,5 +1,6 @@
 .last-news{
     padding-top: 120px;
+    padding-bottom: 170px;
     background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
     position: relative;
     &__container{
@@ -22,15 +23,15 @@
         padding-bottom: 30px;
     }
     &__title{
-        font-size: 2.75rem;
-        font-weight: 700;
-        line-height: 3.375rem;
+        @include title;
         text-align: center;
         color: $white;
         padding-bottom: 90px;
     }
     &__slider-container{
         width: 100%;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -38,6 +39,7 @@
     width: 100%;
     &-slide{
         max-width: 370px;
+        max-height: 500px;
         width: 100%;
         background-color: $white;
     }
@@ -116,9 +118,11 @@
     background-color: $white;
 }
 .swiper-news-pagination .swiper-pagination-bullet{
-    background-color: transparent;
-    border: 1px solid $black;
+    border: 1px solid $white;
     width: 10px;
     height: 10px;
     opacity: 1;
+}
+.swiper-pagination-bullet{
+    background-color: transparent;
 }

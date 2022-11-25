@@ -1,0 +1,38 @@
+.footer{
+    padding: 203px 0 234px;
+    background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    position: relative;
+    &__bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-image: url(../images/footer-bg.png);
+
+    }
+    &__container{
+        @include footer-container;
+        position: relative;
+    }
+    &__form{
+        position: absolute;
+        top: -300px;
+        
+        width: 100%;
+        background-color: $white;
+        padding: 60px 0 70px;
+        &-line{
+            width: 100px;
+            border-top: 1px solid $main-text;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+    }
+    &__form-title{
+        @include titles;
+        color: $main-text;
+        text-align: center;
+    }
+}
+
