@@ -1,0 +1,52 @@
+.section-gallery{
+    padding-top: 120px;
+    background-color: $white;
+    &__container{
+        @include container;
+    }
+    &__line{
+        width: 100px;
+        border-top: 1px solid $main-text;
+        margin: 0 auto;
+        
+        padding-bottom: 30px;
+    }
+    &__title{
+        
+        
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 3.375rem;
+        
+        text-align: center;
+        padding-bottom: 147px;
+    }
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    &__left{
+        max-width: 630px;
+        display: flex;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-top{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        &-bottom{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            
+            justify-content: center;
+        }
+    }
+}
