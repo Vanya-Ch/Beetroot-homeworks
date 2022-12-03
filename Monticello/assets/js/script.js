@@ -8,7 +8,7 @@ let swiperHeader = new Swiper(".header__swiper", {
     },
     loop:true,
   });
-headerPagination.style.right = "52px";
+//headerPagination.style.right = "52px";
 headerPagination.style.transform ="none";
 headerPagination.style.top ="unset";
 
@@ -29,10 +29,23 @@ let swiperNews = new Swiper(".swiper-news", {
       nextEl: newsNext,
       prevEl: newsPrev,
     },
+    breakpoints:{
+      320:{
+        slidesPerView: 1,
+        
+      },
+      600:{
+        slidesPerView:2,
+      },
+      1100:{
+        slidesPerView:3,
+      }
+    }
 });
 
 newsPagination.style.bottom = "120px";
-newsNext.style.right = "115px";
-newsPrev.style.left = "115px"
+//newsNext.style.right = "115px";
+//newsPrev.style.left = "115px"
 newsPrev.style.top = "unset";
 newsNext.style.top = "unset";
+

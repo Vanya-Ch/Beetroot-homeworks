@@ -1,6 +1,10 @@
 @mixin container {
-    max-width: 1170px / 1600px * 100% ;
+    max-width: (1170px / 1600px) * 100% ;
     margin: 0 auto;
+    @media screen and (max-width:1300px) {
+        max-width: 1024px / $laptop * 100%;
+    }
+    
 }
 @mixin footer-container {
     max-width: 770px/1600px*100%;
@@ -25,6 +29,7 @@
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
+        cursor: pointer;
     }
 }
 @mixin titles {

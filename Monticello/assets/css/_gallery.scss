@@ -13,7 +13,9 @@
         padding-bottom: 30px;
     }
     &__title{
-        @include titles;
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 3.375rem;
         text-align: center;
         padding-bottom: 90px;
     }

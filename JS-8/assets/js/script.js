@@ -10,11 +10,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     div.textContent = "Ctrl + e";
     content.append(div);
     document.addEventListener("keydown", event =>{
+        
         if(event.ctrlKey && event.key === 'e'){
             event.preventDefault();
+
             content.innerHTML = "";
+
             textarea.textContent = div.textContent;
+
             content.prepend(textarea);
+
         }else if(event.ctrlKey && event.key === 's'){
             event.preventDefault();
         
@@ -23,6 +28,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             content.innerHTML = "";
             
             content.prepend(div);
+
         }
     })
 

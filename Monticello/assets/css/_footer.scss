@@ -2,6 +2,7 @@
     padding: 203px 0 234px;
     background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
     position: relative;
+    
     &__bg{
         position: absolute;
         height: 100%;
@@ -9,15 +10,17 @@
         top: 0;
         left: 0;
         background-image: url(../images/footer-bg.png);
-
+        background-repeat: no-repeat;
     }
     &__container{
         @include footer-container;
         position: relative;
+        
+        
     }
     &__form{
         position: absolute;
-        top: -300px;
+        top: -420px;
         
         width: 100%;
         background-color: $white;
@@ -28,11 +31,88 @@
             margin: 0 auto;
             padding-bottom: 30px;
         }
+        &-title{
+            font-size: 2.75rem;
+            font-weight: 700;
+            line-height: 3.375rem;
+            color: $main-text;
+            text-align: center;
+            padding-bottom: 42px;
+        }
+        &-contacts{
+            display: flex;
+            gap: 54px;
+            justify-content: center;
+        }
     }
-    &__form-title{
-        @include titles;
-        color: $main-text;
-        text-align: center;
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-location{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &-number{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &-phone{
+            display: flex;
+            align-items: center;
+        }
+        &-mail{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &-open{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    &__input{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-submit{
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        &-button{
+            @include button;
+            background-color: transparent;
+            padding: 11px 34px;
+            max-width: 140px;
+        }
+    }
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 54px 0 41px;
+    }
+    &__copyright{
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        color: $white;
+    }
+}
+.input{
+    border: none;
+    border-bottom: 1px solid $main-text;
+    padding: 0 0 14px;
+    width: 310px;
+    opacity: .2;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: $black;
+    &:focus{
+        opacity: 1;
     }
 }
 
