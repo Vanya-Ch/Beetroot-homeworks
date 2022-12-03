@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-
-    let main = document.getElementById('main'),
+    let problem = document.querySelector('.problem'),
+        main = document.getElementById('main'),
         content = document.getElementById('content');
 
     let div = document.createElement('div'),
