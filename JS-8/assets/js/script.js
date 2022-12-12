@@ -33,30 +33,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
 
     let change = document.getElementById('change'),
-        width = change.offsetWidth,
-        height = change.offsetHeight;
+        changeEl = change.querySelector('span');
 
-    change.addEventListener('mousedown', event =>{
-        
-        if(event.offsetX > 194 && event.offsetY > 194){
-            div.style.cursor = "pointer";
-            document.addEventListener('mousemove', e =>{
-            
-                let difX = e.pageX - event.pageX;
-                let difY = e.pageY - event.pageY;
-                
-                document.addEventListener('mouseup', () =>{
-                    return change.style.width = width + difX+"px";
-                })
-                document.addEventListener('mouseup', () =>{
-                    return change.style.height = height + difY + "px";
-                })
-                return;
-            })
-        }
-        
+    changeEl.addEventListener('mousedown', () => {
+        document.addEventListener('mousemove', changeSize);
+        document.addEventListener('mouseup', function () {
+            document.removeEventListener('mousemove', changeSize);
+        });
+    });
 
-    })
+    function changeSize(event) {
+        change.style.width = `${event.pageX + change.offsetLeft}px`;
+        change.style.height = `${event.pageY - change.offsetTop}px`;
+    };
 
     const table = document.getElementById('table');
     let colIndex = -1;
