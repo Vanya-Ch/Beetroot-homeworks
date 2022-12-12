@@ -1,1 +1,37 @@
 <!-- http://www.omdbapi.com/?i=tt3896198&apikey=f7226b33 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-10</title>
+</head>
+<body>
+    <main>
+        <form
+        action="http://www.omdbapi.com/?i=tt3896198&apikey=f7226b33"
+        autocomplete="off"
+        method="get"
+        id="search-form">
+            <input name="title" type="search" placeholder="Enter film name">
+            <select name="type">
+                <option value="movie">movie</option>
+                <option value="series">series</option>
+                <option value="episode">episode</option>
+            </select>
+            <button type="submit">
+                Search
+            </button>
+        </form>
+
+        <div id="search-results"></div>
+
+        <ul id="search-pagination"></ul>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
