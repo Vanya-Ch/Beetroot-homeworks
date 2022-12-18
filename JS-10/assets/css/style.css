@@ -6,3 +6,29 @@
 *{
     font-family: serif;
 }
+.pagination{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+}
+.pagination:hover{
+    cursor: pointer;
+}
+.film-item__btn{
+    border: 1px solid #000;
+    padding: 10px 25px;
+    margin: 20px 0;
+    display: inline-block;
+}
+.film-item__btn:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}

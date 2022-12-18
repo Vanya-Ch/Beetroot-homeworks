@@ -1,131 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
-    let form = document.getElementById("searching-form");
-
-    if(form){
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            findFilms(undefined, page = 1);
-        })
-    }
-
-
-    function findFilms(page = 1, form) {
-        let titleField = form.querySelector('input[type=search]'),
-            typeField = form.querySelector('select[name=type]');
-    
-        // if(titleField.value.length > 0) {
-        //     // enter your logic here
-        // }
-    
-        if(titleField.value.length === 0) {
-            return;
-        }
-        axios({
-            url: form.action, // form.getAttribute('action'),
-            method: form.method, // form.getAttribute('method')
-            params: {
-                s: titleField.value,
-                type: typeField.value,
-                page: page
-            },
-            responseType: 'json'
-        })
-            .then((res) => {
-                let resultsBlock = document.getElementById('search-results');
-                if(!resultsBlock) {
-                    return;
-                }
-    
-                resultsBlock.innerHTML = '';
-    
-                if(res.data.Error) {
-                    resultsBlock.innerHTML = res.data.Error
-                } else if(res.data.Search && res.data.totalResults) {
-                    for(let i = 0; i < res.data.Search.length; i++) {
-                        resultsBlock.append(createFilmItem(res.data.Search[i]))
-                    }
-    
-                    addListenerToDetailsBtn(resultsBlock)
-                    createPagination(res.data.totalResults)
-                    addListenerToPaginationItems()
-                }
-            })
-            .catch(() => {
-                let resultsBlock = document.getElementById('search-results');
-                if(!resultsBlock) {
-                    return;
-                }
-                
-                resultsBlock.innerHTML = 'Error!'
-            })
-    }
-
-
-    function createFilmItem(item){
-        let el = document.createElement('div'),
-        elTitle = document.createElement('h4'),
-        elYear = document.createElement('div'),
-        elButton = document.createElement('span');
-
-
-        el.classList.add('film-item')
-        elTitle.classList.add('film-item__title')
-        elYear.classList.add('film-item__year')
-        elButton.classList.add('film-item__btn')
-
-
-        elTitle.innerHTML = "Name: " + item.Title                            
-        elYear.innerHTML = "Year: " + item.Year ?? "-"                        
-        elButton.innerHTML = "Details";
-
-
-        el.append(elTitle)
-        el.append(elYear)
-        el.append(elButton)
-
-        return el;
-    }
-
-
-    function createPagination(amount){
-        let ul = document.getElementById("search-pagination");
-
-        if(!ul){
-            return;
-        }
-
-        ul.innerHTML = "";
-
-        for(let i = 0; i < amount.length/10; i++){
-            let el = document.createElement("li");
-
-            el.innerHTML = i + 1;
-
-            ul.append(el);
-        }
-    }
-
-    function addListenerToPaginationItems(){
-        let ulItems = document.querySelectorAll("#search-pagination li"),
-            form = document.getElementById("search-form");
-
-            if(ulItems.length === 0){
-                return;
-            }
-
-            ulItems.forEach(item => {
-                item.addEventListener('click', (e) => {
-                    findFilms(e.target.innerText, form)
-                })
-            });
-    }
-
-
-})
-
-
-/* window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     let form = document.getElementById('search-form');
 
     if(form) {
@@ -155,7 +28,8 @@ function findFilms(page = 1, form) {
         params: {
             s: titleField.value,
             type: typeField.value,
-            page: page
+            page: page,
+            
         },
         responseType: 'json'
     })
@@ -193,50 +67,44 @@ function createFilmItem(item) {
     let el = document.createElement('div'),
         elTitle = document.createElement('h4'),
         elYear = document.createElement('div'),
-        elButton = document.createElement('span');
-
+        elButton = document.createElement('span'),
+        elPlot = document.createElement('div');
+    
     el.classList.add('film-item')
     elTitle.classList.add('film-item__title')
     elYear.classList.add('film-item__year')
     elButton.classList.add('film-item__btn')
+    elPlot.classList.add('film-item__plot')
+
 
     elTitle.innerHTML = "Name: " + item.Title                            
     elYear.innerHTML = "Year: " + item.Year ?? "-"                        
-    elButton.innerHTML = "Details";
+    elButton.innerHTML = "Details"
+    elPlot.innerHTML = "Plot: " + item.Plot
 
     el.append(elTitle)
     el.append(elYear)
     el.append(elButton)
+    el.append(elPlot)
 
     return el
 }
 
 function createPagination(amount) {
     let ul = document.getElementById('search-pagination');
-
+    ul.classList.add('pagination')
     if(!ul) {
         return;
     }
 
     ul.innerHTML = '';
 
-    // while(amount % 10) {
-    //     if(!amount) break;
-
-    //     let el = document.createElement('li');
-    //     el.innerHTML = i + 1
-
-    //     ul.append(el)
-        
-    //     console.log(amount)
-    //     amount = Math.ceil(amount / 10)
-    // }
-
     for(let i = 0; i < amount / 10; i++) {
         let el = document.createElement('li');
         el.innerHTML = i + 1
 
         ul.append(el)
+
     }
 }
 
@@ -251,6 +119,9 @@ function addListenerToPaginationItems() {
     ulItems.forEach(item => {
         item.addEventListener('click', (e) => {
             findFilms(e.target.innerText, form)
+            if(e.target.innerText === page){
+                return;
+            }
         })
     });
 }
@@ -267,4 +138,4 @@ function addListenerToDetailsBtn(block) {
 
 function showFilmDetails(e) {
     console.log(e.target.closest('.film-item'))
-} */
+}

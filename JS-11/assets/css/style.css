@@ -1,0 +1,23 @@
+.city-blocks{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.city-block{
+    border: 1px solid #000;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: rgba(183, 194, 144, 0.459);
+    color: #000);
+}
+hr{
+    width: 80%;
+    margin: 0 auto;
+}
