@@ -1,0 +1,82 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 26px;
+    background-color: #D9D9D9;
+    margin: 20px;
+    text-align: center;
+}
+
+.header__logo{
+    height: 37px;
+    width: 180px;
+    background-color: #F1F2AE;
+}
+
+.header__socials{
+    display: flex;
+    gap: 20px;
+}
+
+.header__link{
+    width: 46px;
+    height: 37px;
+    background-color: #E7EFD6;
+}
+
+.full-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 145px;
+    background-color: #D9D9D9;
+    margin: 0 20px 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+    margin: 20px;
+}
+
+.main__blog{
+    text-align: center;
+    
+    width: 66%;
+    padding: 17px 26px;
+    background-color: #D9D9D9;
+}
+
+.main__news{
+    text-align: center;
+    
+    width: 34%;
+    padding: 17px 26px;
+    background-color: #D9D9D9;
+}
+
+.main__blog-post{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-top: 15px;
+}
+
+.blog-post{
+    height: 70px;
+    background-color: #F9D7D7;
+}
+
+.main__news-post{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.news-post{
+    height: 110px;
+    background: #BDCDF7;
+}

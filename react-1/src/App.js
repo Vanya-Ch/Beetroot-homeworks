@@ -1,13 +1,17 @@
-/* <Slider></Slider> */
-import './App.css';
-import Slider from './components/Slider.js'
+import './assets/css/Maket.css'
+import Header from './components/Header'
+import FullWidth from './components/FullWidth'
+import Main from './components/Main';
 
 function App() {
   return (
-    <>
-      <Slider/>
-      <div className="test test-1">New text</div>
-    </>
+    <div>
+        <Header/>
+        
+        <FullWidth/>
+        
+        <Main/>
+    </div>
   );
 }
 

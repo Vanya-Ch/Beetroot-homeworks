@@ -1,13 +1,9 @@
 document.addEventListener('DOMContentLoaded', () =>{
     
     
-      
-    setCookie('user', 'John', {secure: true, 'max-age': 60});
+    setCookie('user', 'John', {'max-age': 60});
     deleteCookie('user')
   
-    /* setInterval(()=>{
-
-    }, 7200000) */
     getInfo('London', 'uk')
     getInfo('Kyiv', 'ua');
     getInfo('Paris', 'fr')
@@ -17,14 +13,18 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
 function getInfo(city, country){
+    let temp;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=fa4daba5896a217ec775b0a6da0830e1`)
     .then((res) => res.json() )
     .then((data) => {
-        let temp = (data.main.temp - 273).toFixed(0);
+      
+        temp = (data.main.temp - 273).toFixed(0);
+        
         localStorage.setItem( city , `${temp}`)
         document.querySelector(`.${city}`).textContent = data.name;
         document.querySelector(`.${city}-temp`).innerHTML = `${temp} &deg`;
         document.querySelector(`.${city}-weather`).textContent = data.weather[0]['main'] 
+        
         
     })
 }

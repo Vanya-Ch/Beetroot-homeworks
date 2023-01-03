@@ -80,7 +80,7 @@ function createFilmItem(item) {
     elTitle.innerHTML = "Name: " + item.Title                            
     elYear.innerHTML = "Year: " + item.Year ?? "-"                        
     elButton.innerHTML = "Details"
-    elPlot.innerHTML = "Plot: " + item.Plot
+    elPlot.innerHTML = "Description: " + item.Description
 
     el.append(elTitle)
     el.append(elYear)
