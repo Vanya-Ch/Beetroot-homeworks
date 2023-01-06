@@ -1,12 +1,10 @@
 
 
-export default function BlogPost(){
+export default function BlogPost(props){
     return(
-    <div className="main__blog-post">
-        <div className="blog-post"></div>
-        <div className="blog-post"></div>
-        <div className="blog-post"></div>
-        <div className="blog-post"></div>
+    <div className="blog-post">
+        {props.text}
     </div>
+    
     )
 }

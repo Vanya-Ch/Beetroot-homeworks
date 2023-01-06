@@ -1,11 +1,9 @@
 
 
-export default function NewsPost(){
+export default function NewsPost(props){
     return(
-    <div className="main__news-post">
-        <div className="news-post"></div>
-        <div className="news-post"></div>
-        <div className="news-post"></div>
-    </div>
+        <div className="news-post">
+            {props.news}
+        </div>
     )
 }
