@@ -1,0 +1,11 @@
+.main{
+    padding-top: 25px;
+    &__container{
+        max-width: calc(1200px/1440px)*100%;
+        margin: 0 auto;
+    }
+    &__content{
+        margin-left: 50px;
+        overflow: hidden;
+    }
+}

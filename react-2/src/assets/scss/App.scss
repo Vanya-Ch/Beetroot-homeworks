@@ -1,7 +1,2 @@
-@import './general.scss';
+@import './general.scss', './header.scss', './asideMenu.scss', './main.scss';
 
-.App {
-    &-header{
-        background-color: $white;
-    }
-}
