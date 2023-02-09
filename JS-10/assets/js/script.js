@@ -64,28 +64,29 @@ function findFilms(page = 1, form) {
 }
 
 function createFilmItem(item) {
+    console.log(item)
     let el = document.createElement('div'),
         elTitle = document.createElement('h4'),
         elYear = document.createElement('div'),
         elButton = document.createElement('span'),
-        elPlot = document.createElement('div');
+        elPoster = document.createElement('div');
     
     el.classList.add('film-item')
     elTitle.classList.add('film-item__title')
     elYear.classList.add('film-item__year')
     elButton.classList.add('film-item__btn')
-    elPlot.classList.add('film-item__plot')
+    elPoster.classList.add('film-item__poster')
 
 
     elTitle.innerHTML = "Name: " + item.Title                            
     elYear.innerHTML = "Year: " + item.Year ?? "-"                        
     elButton.innerHTML = "Details"
-    elPlot.innerHTML = "Description: " + item.Description
+    elPoster.innerHTML = "Description: " + item.Title
 
     el.append(elTitle)
     el.append(elYear)
     el.append(elButton)
-    el.append(elPlot)
+    el.append(elPoster)
 
     return el
 }

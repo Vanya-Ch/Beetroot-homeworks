@@ -7,6 +7,9 @@ let swiperHeader = new Swiper(".header__swiper", {
       clickable: true,
     },
     loop:true,
+    autoplay:{
+      delay:5000,
+    },
   });
 //headerPagination.style.right = "52px";
 headerPagination.style.transform ="none";
@@ -40,7 +43,10 @@ let swiperNews = new Swiper(".swiper-news", {
       1100:{
         slidesPerView:3,
       }
-    }
+    },
+    autoplay: {
+      delay: 7000,
+    },
 });
 
 newsPagination.style.bottom = "120px";
@@ -48,4 +54,17 @@ newsPagination.style.bottom = "120px";
 //newsPrev.style.left = "115px"
 newsPrev.style.top = "unset";
 newsNext.style.top = "unset";
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
 
