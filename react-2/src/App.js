@@ -1,3 +1,4 @@
+import React from 'react'
 import './assets/scss/App.scss';
 import Header from './components-homework/Header';
 import AsideMenu from './components-homework/AsideMenu';

@@ -69,7 +69,9 @@ function createFilmItem(item) {
         elTitle = document.createElement('h4'),
         elYear = document.createElement('div'),
         elButton = document.createElement('span'),
-        elPoster = document.createElement('div');
+        elPoster = document.createElement('img');
+
+    elPoster.src = item.Poster
     
     el.classList.add('film-item')
     elTitle.classList.add('film-item__title')
@@ -81,7 +83,7 @@ function createFilmItem(item) {
     elTitle.innerHTML = "Name: " + item.Title                            
     elYear.innerHTML = "Year: " + item.Year ?? "-"                        
     elButton.innerHTML = "Details"
-    elPoster.innerHTML = "Description: " + item.Title
+    
 
     el.append(elTitle)
     el.append(elYear)

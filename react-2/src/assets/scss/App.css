@@ -1,0 +1,78 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.header {
+  padding: 10px 0;
+  background-color: rgb(43, 45, 168);
+}
+.header__container {
+  max-width: 83.3333333333%;
+  margin: 0 auto;
+}
+.header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.header__menu-line {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.header__logo {
+  color: #fff;
+  font-size: 28px;
+  line-height: 36px;
+}
+.header__profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-menu {
+  max-width: 160px;
+  position: fixed;
+  left: 0;
+  padding: 25px 30px 25px 15px;
+  height: 80vh;
+}
+.aside-menu__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+.aside-menu__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+
+.main {
+  padding-top: 25px;
+}
+.main__container {
+  max-width: 83.3333333333%;
+  margin: 0 auto;
+}
+.main__content {
+  margin-left: 50px;
+  overflow: hidden;
+}/*# sourceMappingURL=App.css.map */
